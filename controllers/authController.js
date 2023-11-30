@@ -3,6 +3,7 @@ const AppError = require("../utils/AppError");
 const signToken = require("../utils/signToken");
 const jwt = require("jsonwebtoken");
 const util = require("util");
+const getLocalTimestamp = require("../utils/getLocalTimestamp");
 
 exports.singup = async (req, res, next) => {
 	try {
@@ -30,7 +31,7 @@ exports.login = async (req, res, next) => {
 
 		const user = await User.findOneAndUpdate(
 			{ email },
-			{ lastLoginTime: Date.now() },
+			{ lastLoginTime: getLocalTimestamp() },
 			{ new: true }
 		);
 
