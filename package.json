@@ -2,7 +2,7 @@
 	"name": "omni-app-be",
 	"version": "1.0.0",
 	"description": "Fun app with payments",
-	"main": "index.js",
+	"main": "server.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start:dev": "cross-env NODE_ENVIRONMENT=development nodemon server.js",
