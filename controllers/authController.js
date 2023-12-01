@@ -1,9 +1,10 @@
 const User = require("../models/userModel");
 const AppError = require("../utils/AppError");
-const signToken = require("../utils/signToken");
+const jwtSigning = require("../utils/jwtSigning");
 const jwt = require("jsonwebtoken");
 const util = require("util");
 const getLocalTimestamp = require("../utils/getLocalTimestamp");
+const sendEmail = require("../utils/sendEmail");
 
 exports.singup = async (req, res, next) => {
 	try {
@@ -45,7 +46,7 @@ exports.login = async (req, res, next) => {
 		res.status(200).json({
 			status: "success",
 			message: "User found",
-			token: signToken(user._id),
+			token: jwtSigning.signToken(user._id),
 			data: {
 				user,
 			},
@@ -98,4 +99,26 @@ exports.restrictTo = (...roles) => {
 		}
 		next();
 	};
+};
+
+exports.forgotPassword = async (req, res, next) => {
+	try {
+		const { email } = req.body;
+		if (!email) return next(new AppError("Please provide an email", 400));
+
+		const user = await User.findOne({ email });
+		if (!user) return next(new AppError("User with this email doesn't exist", 400));
+
+		const resetToken = jwtSigning.signToken(user.email);
+		const resetURL = `http://localhost:3000/reset-password/${resetToken}`;
+
+		await sendEmail(user.email, resetURL);
+
+		res.status(200).json({
+			status: "success",
+			message: "Email succesfully sent",
+		});
+	} catch (err) {
+		next(new AppError(err.message, 400));
+	}
 };
