@@ -1,7 +1,7 @@
 const AppError = require("../utils/AppError");
 
 exports.healthController = (_req, res, _next) => {
-	res.status(200).json({ message: "App is healthy and going just fine. ANDRIJANA DEVOPS" });
+	res.status(200).json({ message: "App is healthy and going just fine." });
 };
 
 exports.routeNotFoundController = (req, _res, next) => {
