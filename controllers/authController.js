@@ -109,14 +109,40 @@ exports.forgotPassword = async (req, res, next) => {
 		const user = await User.findOne({ email });
 		if (!user) return next(new AppError("User with this email doesn't exist", 400));
 
-		const resetToken = jwtSigning.signToken(user.email);
-		const resetURL = `http://localhost:3000/reset-password/${resetToken}`;
+		const resetToken = jwtSigning.signEmail(user.email);
+		const resetURL = `http://localhost:3000/reset-password/?token=${resetToken}`;
 
 		await sendEmail(user.email, resetURL);
 
 		res.status(200).json({
 			status: "success",
 			message: "Email succesfully sent",
+		});
+	} catch (err) {
+		next(new AppError(err.message, 400));
+	}
+};
+
+exports.resetPassword = async (req, res, next) => {
+	try {
+		const { token } = req.query;
+		const { newPassword } = req.body;
+		if (!token || !newPassword)
+			return next(new AppError("Token or newPassword not provided", 400));
+
+		const decoded = jwt.verify(token, process.env.JWT_SECRET);
+
+		const user = await User.findOneAndUpdate(
+			{ email: decoded.email },
+			{ password: newPassword },
+			{ runValidators: true, new: true }
+		);
+		if (!user) return next(new AppError("User not found", 400));
+
+		res.status(200).json({
+			status: "success",
+			message: "Password changed",
+			user,
 		});
 	} catch (err) {
 		next(new AppError(err.message, 400));

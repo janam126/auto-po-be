@@ -7,7 +7,7 @@ exports.signToken = (id) => {
 };
 
 exports.signEmail = (email) => {
-	return jwt.verify({ email }, process.env.JWT_SECRET, {
+	return jwt.sign({ email }, process.env.JWT_SECRET, {
 		expiresIn: "15m",
 	});
 };
