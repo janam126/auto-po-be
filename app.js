@@ -2,6 +2,7 @@ const express = require("express");
 const morgan = require("morgan");
 const appController = require("./controllers/appController");
 const userRouter = require("./routes/userRoutes");
+const purchaseOrdersRouter = require("./routes/purchaseOrdersRoutes");
 
 const app = express();
 
@@ -15,6 +16,7 @@ if (process.env.NODE_ENVIRONMENT === "development") {
 
 // App routes
 app.use("/user", userRouter);
+app.use("/purchaseOrders", purchaseOrdersRouter);
 
 // Extra middlewares
 app.get("/health", appController.healthController);
