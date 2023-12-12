@@ -21,11 +21,11 @@ if (process.env.NODE_ENVIRONMENT === "development") {
 }
 
 // App routes
-app.use("/user", userRouter);
-app.use("/purchaseOrders", purchaseOrdersRouter);
+app.use("/api/v1/user", userRouter);
+app.use("/api/v1/purchaseOrders", purchaseOrdersRouter);
 
 // Extra middlewares
-app.get("/health", appController.healthController);
+app.get("/api/v1/health", appController.healthController);
 app.all("*", appController.routeNotFoundController);
 app.use(appController.errorHandlingController);
 
