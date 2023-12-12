@@ -8,7 +8,7 @@ const sendEmail = require("../utils/sendEmail");
 
 exports.singup = async (req, res, next) => {
 	try {
-		const { active, settings, role, points, passwordChangedAt, ...filteredBody } = req.body;
+		const { active, settings, role, passwordChangedAt, ...filteredBody } = req.body;
 
 		const createdUser = await User.create(filteredBody);
 
@@ -110,7 +110,7 @@ exports.forgotPassword = async (req, res, next) => {
 		if (!user) return next(new AppError("User with this email doesn't exist", 400));
 
 		const resetToken = jwtSigning.signEmail(user.email);
-		const resetURL = `http://localhost:3000/reset-password/?token=${resetToken}`;
+		const resetURL = `http://localhost:3000/reset-password?token=${resetToken}`;
 
 		await sendEmail(user.email, resetURL);
 
@@ -124,6 +124,7 @@ exports.forgotPassword = async (req, res, next) => {
 };
 
 exports.resetPassword = async (req, res, next) => {
+	console.log(req.body, req.query);
 	try {
 		const { token } = req.query;
 		const { newPassword } = req.body;
