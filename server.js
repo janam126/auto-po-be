@@ -11,7 +11,7 @@ const DB = process.env.MONGO_DB_CONNECTION_STRING.replace(
 	process.env.MONGO_DB_USERNAME
 ).replace("<password>", process.env.MONGO_DB_PASSWORD);
 
-mongoose.connect(DB, {}).then((_connection) => console.log("Connected to omni-app MongoDB"));
+mongoose.connect(DB, {}).then((_connection) => console.log("Connected to AUTO-PO MongoDB"));
 
 const PORT = process.env.PORT || 8080;
 
