@@ -11,6 +11,7 @@ const sendEmail = async (to, resetLink) => {
 			},
 		});
 
+		// TODO: Add better email thml
 		await transporter.sendMail({
 			from: "Auto PO - StageFront <auto_po_mail>",
 			to,
