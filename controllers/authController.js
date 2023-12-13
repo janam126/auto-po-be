@@ -110,8 +110,7 @@ exports.forgotPassword = async (req, res, next) => {
 		if (!user) return next(new AppError("User with this email doesn't exist", 400));
 
 		const resetToken = jwtSigning.signEmail(user.email);
-		const resetURL = `https://fa5a-109-92-179-21.ngrok-free.app/reset-password?token=${resetToken}`;
-		// const resetURL = `http://localhost:3000/reset-password?token=${resetToken}`;
+		const resetURL = `http://localhost:3000/reset-password?token=${resetToken}`;
 
 		await sendEmail(user.email, resetURL);
 
