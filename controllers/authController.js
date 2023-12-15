@@ -36,12 +36,15 @@ exports.login = async (req, res, next) => {
 			{ new: true }
 		);
 
-		// This actually means iven if user doesnt exist it will return undefined
-		// So exactly the same as (!user || !user.active)
-		if (!user?.active) return next(new AppError("User doesn't exist or is deactivated", 403));
+		if (!user) return next(new AppError("Incorrect email or password", 403));
 
 		if (user.password !== password)
-			return next(new AppError("Incorrect username or password", 403));
+			return next(new AppError("Incorrect email or password", 403));
+
+		// So exactly the same as (!user || !user.active)
+		// But i had to seperate those 2, because i want to send the same messges if user doesnt exist and if password is incorrect
+		// And then after all of this to check if user is active or not
+		if (!user?.active) return next(new AppError("User doesn't exist or is deactivated", 403));
 
 		res.status(200).json({
 			status: "success",
@@ -110,7 +113,8 @@ exports.forgotPassword = async (req, res, next) => {
 		if (!user) return next(new AppError("User with this email doesn't exist", 400));
 
 		const resetToken = jwtSigning.signEmail(user.email);
-		const resetURL = `http://localhost:3000/reset-password?token=${resetToken}`;
+		// const resetURL = `http://localhost:3000/reset-password?token=${resetToken}`;
+		const resetURL = `https://c644-109-92-179-21.ngrok-free.app/reset-password?token=${resetToken}`;
 
 		await sendEmail(user.email, resetURL);
 
