@@ -114,7 +114,7 @@ exports.forgotPassword = async (req, res, next) => {
 
 		const resetToken = jwtSigning.signEmail(user.email);
 		// const resetURL = `http://localhost:3000/reset-password?token=${resetToken}`;
-		const resetURL = `https://c644-109-92-179-21.ngrok-free.app/reset-password?token=${resetToken}`;
+		const resetURL = `https://d161-109-92-179-21.ngrok-free.app/reset-password?token=${resetToken}`;
 
 		await sendEmail(user.email, resetURL);
 
