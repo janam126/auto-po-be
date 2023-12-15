@@ -136,17 +136,30 @@ exports.resetPassword = async (req, res, next) => {
 
 		const decoded = jwt.verify(token, process.env.JWT_SECRET);
 
-		const user = await User.findOneAndUpdate(
+		// Find the user
+		const user = await User.findOne({ email: decoded.email });
+		if (!user) return next(new AppError("User not found", 400));
+
+		if (user.password === newPassword) {
+			return next(new AppError("Cannot be a previously used password!", 400));
+		}
+
+		// Could have done it this way as well!
+		// Update the password and save the user
+
+		// user.password = newPassword;
+		// await user.save();
+
+		const updatedUser = await User.updateOne(
 			{ email: decoded.email },
 			{ password: newPassword },
 			{ runValidators: true, new: true }
 		);
-		if (!user) return next(new AppError("User not found", 400));
 
 		res.status(200).json({
 			status: "success",
 			message: "Password changed",
-			user,
+			user: updatedUser,
 		});
 	} catch (err) {
 		next(new AppError(err.message, 400));
