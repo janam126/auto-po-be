@@ -1,4 +1,5 @@
 const nodemailer = require("nodemailer");
+const resetPasswordTemplate = require("./resetPasswordTemplate");
 
 const sendEmail = async (to, resetLink) => {
 	try {
@@ -11,12 +12,11 @@ const sendEmail = async (to, resetLink) => {
 			},
 		});
 
-		// TODO: Add better email thml
 		await transporter.sendMail({
 			from: "Auto PO - StageFront <auto_po_mail>",
 			to,
 			subject: "You requested a password reset",
-			html: `Here is your password reset link <a href=${resetLink}>Click me</a>. This link will be available for 15 minutes`,
+			html: resetPasswordTemplate(resetLink),
 		});
 	} catch (err) {
 		return Promise.reject(err);
