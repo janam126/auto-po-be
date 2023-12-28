@@ -2,9 +2,13 @@ const mongoose = require("mongoose");
 const emailRegex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
 
 const userSchema = new mongoose.Schema({
-	fullName: {
+	firstName: {
 		type: String,
-		required: [true, "Your username is required"],
+		required: [true, "Your first name is required"],
+	},
+	lastName: {
+		type: String,
+		required: [true, "Your last name is required"],
 	},
 	email: {
 		type: String,
@@ -57,8 +61,54 @@ const userSchema = new mongoose.Schema({
 		default: true,
 	},
 	settings: {
-		type: mongoose.Schema.Types.Mixed,
-		default: undefined,
+		EventName: {
+			type: Boolean,
+			default: true,
+		},
+		Section: {
+			type: Boolean,
+			default: true,
+		},
+		Row: {
+			type: Boolean,
+			default: true,
+		},
+		Qty: {
+			type: Boolean,
+			default: true,
+		},
+		Cost: {
+			type: Boolean,
+			default: true,
+		},
+		Vendor: {
+			type: Boolean,
+			default: true,
+		},
+		EventDate: {
+			type: Boolean,
+			default: true,
+		},
+		CreationDate: {
+			type: Boolean,
+			default: true,
+		},
+		Status: {
+			type: Boolean,
+			default: true,
+		},
+		Email: {
+			type: Boolean,
+			default: true,
+		},
+		Logs: {
+			type: Boolean,
+			default: true,
+		},
+		POSID: {
+			type: Boolean,
+			default: true,
+		},
 	},
 });
 
