@@ -31,3 +31,20 @@ exports.getMe = async (req, res, next) => {
 		next(new AppError(err.message, 400));
 	}
 };
+
+exports.updateMe = async (req, res, next) => {
+	try {
+		const { active, settings, role, passwordChangedAt, ...filteredBody } = req.body;
+		const newUser = await User.findByIdAndUpdate(req.user.id, filteredBody, { new: true });
+
+		res.status(200).json({
+			status: "success",
+			message: "Prodile updated",
+			data: {
+				user: newUser,
+			},
+		});
+	} catch (err) {
+		next(new AppError(err.message, 400));
+	}
+};
