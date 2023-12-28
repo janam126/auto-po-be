@@ -39,7 +39,7 @@ exports.updateMe = async (req, res, next) => {
 
 		res.status(200).json({
 			status: "success",
-			message: "Prodile updated",
+			message: "Profile updated",
 			data: {
 				user: newUser,
 			},
