@@ -81,7 +81,7 @@ const userSchema = new mongoose.Schema({
 			type: Boolean,
 			default: true,
 		},
-		Vendor: {
+		Marketplace: {
 			type: Boolean,
 			default: true,
 		},
@@ -107,7 +107,7 @@ const userSchema = new mongoose.Schema({
 		},
 		POSID: {
 			type: Boolean,
-			default: true,
+			default: false,
 		},
 	},
 });
