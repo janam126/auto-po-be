@@ -1,6 +1,9 @@
 const express = require("express");
 const morgan = require("morgan");
 const cors = require("cors");
+const helmet = require("helmet");
+const mongoSanitize = require("express-mongo-sanitize");
+const xss = require("xss-clean");
 const rateLimit = require("express-rate-limit");
 const appController = require("./controllers/appController");
 const userRouter = require("./routes/userRoutes");
@@ -24,6 +27,16 @@ const limiter = rateLimit({
 });
 
 app.use("/api", limiter);
+
+// Security
+// Set Security HTTP Headers
+app.use(helmet());
+
+// Data sanitization against noSQL query injection
+app.use(mongoSanitize());
+
+// Data sanitization against XSS (Cross site scripting) attacks
+app.use(xss());
 
 // Others
 app.use(express.json());

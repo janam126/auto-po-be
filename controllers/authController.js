@@ -165,3 +165,40 @@ exports.resetPassword = async (req, res, next) => {
 		next(new AppError(err.message, 400));
 	}
 };
+
+exports.changePassword = async (req, res, next) => {
+	try {
+		const { currentPassword, password, passwordConfirm } = req.body;
+		if (!currentPassword || !password || !passwordConfirm)
+			return next(new AppError("Current Password or Password Confirm not provided", 400));
+
+		// Check if User Password is currentPassword
+		if (req.user.password !== currentPassword) {
+			return next(new AppError("Incorrect current password", 400));
+		}
+
+		// Check if User Password is the same as updated password
+		if (req.user.password === password) {
+			return next(new AppError("Cannot be a previously used password!", 400));
+		}
+
+		// Check if Password and Password COnfirm are the same
+		if (password !== passwordConfirm) {
+			return next(new AppError("Password and Password confirm do not match", 400));
+		}
+
+		const updatedUser = await User.findByIdAndUpdate(
+			req.user.id,
+			{ password, passwordChangedAt: new Date() },
+			{ runValidators: true, new: true }
+		);
+
+		res.status(200).json({
+			status: "success",
+			message: "Password changed",
+			user: updatedUser,
+		});
+	} catch (err) {
+		next(new AppError(err.message, 400));
+	}
+};

@@ -34,7 +34,7 @@ exports.getMe = async (req, res, next) => {
 
 exports.updateMe = async (req, res, next) => {
 	try {
-		const { active, settings, role, passwordChangedAt, ...filteredBody } = req.body;
+		const { active, role, passwordChangedAt, ...filteredBody } = req.body;
 		const newUser = await User.findByIdAndUpdate(req.user.id, filteredBody, { new: true });
 
 		res.status(200).json({
