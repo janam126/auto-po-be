@@ -85,6 +85,13 @@ exports.protect = async (req, _res, next) => {
 		if (!user.active) return next(new AppError("User is inactive", 400));
 
 		// 5 - See if pw was changed in the meantime
+
+		const tokenIssuedAt = new Date(decoded.iat * 1000).getTime();
+		const passwordChangedAt = new Date(user.passwordChangedAt).getTime();
+
+		if (passwordChangedAt > tokenIssuedAt) {
+			return next(new AppError("Unauthorized. Password has been changed", 400));
+		}
 		// Will implement later
 
 		// 6 - If everyrginf is good, go next and append the user to req object
