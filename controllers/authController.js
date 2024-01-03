@@ -90,7 +90,12 @@ exports.protect = async (req, _res, next) => {
 		const passwordChangedAt = new Date(user.passwordChangedAt).getTime();
 
 		if (passwordChangedAt > tokenIssuedAt) {
-			return next(new AppError("Unauthorized. Password has been changed", 400));
+			return next(
+				new AppError(
+					"Token invalid. Password has been changed. Please login again",
+					400
+				)
+			);
 		}
 
 		// 6 - If everything is good, go next and append the user to req object
