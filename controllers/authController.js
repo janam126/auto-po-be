@@ -92,9 +92,8 @@ exports.protect = async (req, _res, next) => {
 		if (passwordChangedAt > tokenIssuedAt) {
 			return next(new AppError("Unauthorized. Password has been changed", 400));
 		}
-		// Will implement later
 
-		// 6 - If everyrginf is good, go next and append the user to req object
+		// 6 - If everything is good, go next and append the user to req object
 		req.user = user;
 		next();
 	} catch (err) {
