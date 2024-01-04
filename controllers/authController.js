@@ -91,10 +91,7 @@ exports.protect = async (req, _res, next) => {
 
 		if (passwordChangedAt > tokenIssuedAt) {
 			return next(
-				new AppError(
-					"Token invalid. Password has been changed. Please login again",
-					400
-				)
+				new AppError("Password has been changed, token invalidated, please login again", 400)
 			);
 		}
 

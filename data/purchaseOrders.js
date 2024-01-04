@@ -5610,5 +5610,4 @@ const purchaseOrders = [
 	},
 ];
 
-
-module.exports = purchaseOrders
+module.exports = purchaseOrders;
