@@ -1,3 +1,6 @@
+// Unused, but could be imporatent later
+// Or at least to be a refference to something
+
 const purchaseOrders = [
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -6009,5 +6012,3 @@ const purchaseOrders = [
 		],
 	},
 ];
-
-module.exports = purchaseOrders;
