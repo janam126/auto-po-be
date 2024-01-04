@@ -16,6 +16,7 @@ exports.getOrdersAndStatistics = async (_req, res, next) => {
 		res.status(200).json({
 			status: "success",
 			message: "Here are your orders and statistics",
+			orderCount: response.length,
 			data: {
 				statistics: {
 					past24h: statistics(),
