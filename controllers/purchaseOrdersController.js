@@ -1,14 +1,10 @@
 const AppError = require("../utils/AppError");
-const purchaseOrders = require("../data/purchaseOrders");
+const PurchaseOrders = require("../models/purchaseOrdersModel");
 const getRngFrom = require("../utils/getRngFrom");
 
 exports.getOrdersAndStatistics = async (_req, res, next) => {
 	try {
-		const response = await new Promise((res, _rej) => {
-			setTimeout(() => {
-				return res(purchaseOrders);
-			}, 1000);
-		});
+		const response = await PurchaseOrders.find({});
 
 		const statistics = () => ({
 			email: getRngFrom(100, 900),
@@ -30,6 +26,22 @@ exports.getOrdersAndStatistics = async (_req, res, next) => {
 			},
 		});
 	} catch (error) {
-		return next(new AppError(error));
+		return next(new AppError(error, 403));
+	}
+};
+
+exports.createPurchaseOrder = async (req, res, next) => {
+	try {
+		const purchaseOrder = await PurchaseOrders.create(req.body);
+
+		res.status(200).json({
+			status: "success",
+			message: "Purchase order created",
+			data: {
+				purchaseOrder,
+			},
+		});
+	} catch (error) {
+		return next(new AppError(error, 403));
 	}
 };

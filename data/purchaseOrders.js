@@ -19,12 +19,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "5873 Visa",
-		History: {
-			UpdatedDate: "2024-02-04 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-02-04 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -45,12 +47,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "9112 Master Card",
-		History: {
-			UpdatedDate: "2023-12-25 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2023-12-25 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -72,12 +76,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "1285 Visa",
-		History: {
-			UpdatedDate: "2024-06-17 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-06-17 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -104,12 +110,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: true,
 		CreditCard: "7512 Visa",
-		History: {
-			UpdatedDate: "2024-11-22 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-11-22 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -131,12 +139,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "7503 Visa",
-		History: {
-			UpdatedDate: "2024-01-27 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-01-27 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -163,12 +173,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: true,
 		CreditCard: "7244 Master Card",
-		History: {
-			UpdatedDate: "2024-02-08 10:55:54",
-			MissingInformation: "qty",
-			Status: "failed",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-02-08 10:55:54",
+				MissingInformation: "qty",
+				Status: "failed",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -195,12 +207,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: false,
 		CreditCard: "4546 Master Card",
-		History: {
-			UpdatedDate: "2023-12-12 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2023-12-12 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -221,12 +235,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "6809 Master Card",
-		History: {
-			UpdatedDate: "2024-01-30 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-01-30 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -247,12 +263,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "2390 Master Card",
-		History: {
-			UpdatedDate: "2024-03-28 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-03-28 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -273,12 +291,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "3394 Visa",
-		History: {
-			UpdatedDate: "2024-03-01 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-03-01 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -305,12 +325,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: false,
 		CreditCard: "1808 Master Card",
-		History: {
-			UpdatedDate: "2023-12-12 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2023-12-12 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -331,12 +353,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "7554 Visa",
-		History: {
-			UpdatedDate: "2023-12-16 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2023-12-16 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -363,12 +387,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: true,
 		CreditCard: "7759 Master Card",
-		History: {
-			UpdatedDate: "2024-06-28 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-06-28 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -395,12 +421,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: true,
 		CreditCard: "7763 Master Card",
-		History: {
-			UpdatedDate: "2024-04-17 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-04-17 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -421,12 +449,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "9613 Master Card",
-		History: {
-			UpdatedDate: "2024-02-06 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-02-06 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -447,12 +477,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "4570 Visa",
-		History: {
-			UpdatedDate: "2024-01-04 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-01-04 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "The Phantom of the Opera Broadway Show",
@@ -474,12 +506,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "6255 Visa",
-		History: {
-			UpdatedDate: "2024-06-02 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-06-02 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -501,12 +535,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "8131 Visa",
-		History: {
-			UpdatedDate: "2023-12-18 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2023-12-18 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -528,12 +564,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "2205 Visa",
-		History: {
-			UpdatedDate: "2024-02-24 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-02-24 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -554,12 +592,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "1855 Visa",
-		History: {
-			UpdatedDate: "2024-03-25 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-03-25 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -586,12 +626,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: false,
 		CreditCard: "8796 Master Card",
-		History: {
-			UpdatedDate: "2024-06-10 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-06-10 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -612,12 +654,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "3554 Visa",
-		History: {
-			UpdatedDate: "2024-01-28 10:55:54",
-			MissingInformation: "attachment",
-			Status: "failed",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-01-28 10:55:54",
+				MissingInformation: "attachment",
+				Status: "failed",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -638,12 +682,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "8076 Visa",
-		History: {
-			UpdatedDate: "2024-01-03 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-01-03 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -664,12 +710,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "8021 Visa",
-		History: {
-			UpdatedDate: "2024-08-05 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-08-05 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "The Phantom of the Opera Broadway Show",
@@ -696,12 +744,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: true,
 		CreditCard: "5057 Master Card",
-		History: {
-			UpdatedDate: "2024-06-13 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-06-13 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "The Phantom of the Opera Broadway Show",
@@ -728,12 +778,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: false,
 		CreditCard: "6568 Visa",
-		History: {
-			UpdatedDate: "2024-01-24 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-01-24 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -754,12 +806,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "5673 Visa",
-		History: {
-			UpdatedDate: "2024-08-22 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-08-22 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -781,12 +835,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "2494 Visa",
-		History: {
-			UpdatedDate: "2024-05-10 10:55:54",
-			MissingInformation: "section",
-			Status: "failed",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-05-10 10:55:54",
+				MissingInformation: "section",
+				Status: "failed",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -808,12 +864,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "3946 Master Card",
-		History: {
-			UpdatedDate: "2024-01-17 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-01-17 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -834,12 +892,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "4355 Master Card",
-		History: {
-			UpdatedDate: "2024-05-07 10:55:54",
-			MissingInformation: "section",
-			Status: "failed",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-05-07 10:55:54",
+				MissingInformation: "section",
+				Status: "failed",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -866,12 +926,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: true,
 		CreditCard: "9055 Master Card",
-		History: {
-			UpdatedDate: "2024-11-04 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-11-04 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "The Phantom of the Opera Broadway Show",
@@ -893,12 +955,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "1258 Master Card",
-		History: {
-			UpdatedDate: "2024-04-04 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-04-04 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -919,12 +983,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "2763 Master Card",
-		History: {
-			UpdatedDate: "2024-04-18 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-04-18 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -945,12 +1011,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "7282 Visa",
-		History: {
-			UpdatedDate: "2024-04-20 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-04-20 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -972,12 +1040,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "1260 Master Card",
-		History: {
-			UpdatedDate: "2024-02-10 10:55:54",
-			MissingInformation: "section",
-			Status: "failed",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-02-10 10:55:54",
+				MissingInformation: "section",
+				Status: "failed",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -998,12 +1068,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "3217 Visa",
-		History: {
-			UpdatedDate: "2024-04-20 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-04-20 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -1025,12 +1097,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "1491 Master Card",
-		History: {
-			UpdatedDate: "2024-08-30 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-08-30 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -1052,12 +1126,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "9366 Master Card",
-		History: {
-			UpdatedDate: "2024-02-18 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-02-18 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "The Phantom of the Opera Broadway Show",
@@ -1079,12 +1155,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "1310 Master Card",
-		History: {
-			UpdatedDate: "2023-12-16 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2023-12-16 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -1106,12 +1184,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "2721 Visa",
-		History: {
-			UpdatedDate: "2024-01-10 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-01-10 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "The Phantom of the Opera Broadway Show",
@@ -1133,12 +1213,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "9983 Master Card",
-		History: {
-			UpdatedDate: "2024-02-19 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-02-19 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -1165,12 +1247,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: true,
 		CreditCard: "1094 Master Card",
-		History: {
-			UpdatedDate: "2024-02-18 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-02-18 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "The Phantom of the Opera Broadway Show",
@@ -1197,12 +1281,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: false,
 		CreditCard: "9617 Master Card",
-		History: {
-			UpdatedDate: "2024-05-16 10:55:54",
-			MissingInformation: "seats",
-			Status: "failed",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-05-16 10:55:54",
+				MissingInformation: "seats",
+				Status: "failed",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -1229,12 +1315,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: false,
 		CreditCard: "5260 Master Card",
-		History: {
-			UpdatedDate: "2024-09-02 10:55:54",
-			MissingInformation: "section",
-			Status: "failed",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-09-02 10:55:54",
+				MissingInformation: "section",
+				Status: "failed",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -1261,12 +1349,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: true,
 		CreditCard: "1598 Visa",
-		History: {
-			UpdatedDate: "2024-06-22 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-06-22 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -1288,12 +1378,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "5655 Visa",
-		History: {
-			UpdatedDate: "2024-06-19 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-06-19 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -1320,12 +1412,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: true,
 		CreditCard: "9239 Master Card",
-		History: {
-			UpdatedDate: "2024-02-13 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-02-13 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -1347,12 +1441,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "4020 Master Card",
-		History: {
-			UpdatedDate: "2024-02-16 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-02-16 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -1379,12 +1475,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: false,
 		CreditCard: "8130 Master Card",
-		History: {
-			UpdatedDate: "2024-10-28 10:55:54",
-			MissingInformation: "section",
-			Status: "failed",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-10-28 10:55:54",
+				MissingInformation: "section",
+				Status: "failed",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -1406,12 +1504,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "9784 Master Card",
-		History: {
-			UpdatedDate: "2024-01-14 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-01-14 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -1432,12 +1532,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "4142 Master Card",
-		History: {
-			UpdatedDate: "2024-09-24 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-09-24 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -1459,12 +1561,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "2105 Master Card",
-		History: {
-			UpdatedDate: "2024-10-04 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-10-04 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -1491,12 +1595,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: false,
 		CreditCard: "9274 Visa",
-		History: {
-			UpdatedDate: "2024-04-29 10:55:54",
-			MissingInformation: "seats",
-			Status: "failed",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-04-29 10:55:54",
+				MissingInformation: "seats",
+				Status: "failed",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -1523,12 +1629,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: true,
 		CreditCard: "5586 Master Card",
-		History: {
-			UpdatedDate: "2024-04-03 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-04-03 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "The Phantom of the Opera Broadway Show",
@@ -1555,12 +1663,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: true,
 		CreditCard: "5151 Master Card",
-		History: {
-			UpdatedDate: "2024-01-16 10:55:54",
-			MissingInformation: "section",
-			Status: "failed",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-01-16 10:55:54",
+				MissingInformation: "section",
+				Status: "failed",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -1581,12 +1691,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "8489 Master Card",
-		History: {
-			UpdatedDate: "2024-01-29 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-01-29 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "The Phantom of the Opera Broadway Show",
@@ -1613,12 +1725,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: true,
 		CreditCard: "3970 Visa",
-		History: {
-			UpdatedDate: "2024-03-12 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-03-12 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -1639,12 +1753,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "9110 Master Card",
-		History: {
-			UpdatedDate: "2024-02-29 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-02-29 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -1666,12 +1782,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "3604 Visa",
-		History: {
-			UpdatedDate: "2024-03-06 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-03-06 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -1698,12 +1816,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: true,
 		CreditCard: "3060 Visa",
-		History: {
-			UpdatedDate: "2024-02-27 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-02-27 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -1725,12 +1845,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "1405 Visa",
-		History: {
-			UpdatedDate: "2024-01-12 10:55:54",
-			MissingInformation: "qty",
-			Status: "failed",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-01-12 10:55:54",
+				MissingInformation: "qty",
+				Status: "failed",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -1752,12 +1874,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "1383 Visa",
-		History: {
-			UpdatedDate: "2024-07-16 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-07-16 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -1778,12 +1902,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "4619 Master Card",
-		History: {
-			UpdatedDate: "2024-11-14 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-11-14 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -1810,12 +1936,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: true,
 		CreditCard: "8134 Visa",
-		History: {
-			UpdatedDate: "2024-03-03 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-03-03 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -1837,12 +1965,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "2802 Visa",
-		History: {
-			UpdatedDate: "2023-12-16 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2023-12-16 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -1869,12 +1999,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: false,
 		CreditCard: "1037 Visa",
-		History: {
-			UpdatedDate: "2024-01-03 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-01-03 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -1895,12 +2027,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "4180 Master Card",
-		History: {
-			UpdatedDate: "2023-12-14 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2023-12-14 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -1922,12 +2056,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "2580 Master Card",
-		History: {
-			UpdatedDate: "2023-12-29 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2023-12-29 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -1949,12 +2085,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "5754 Visa",
-		History: {
-			UpdatedDate: "2024-03-10 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-03-10 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -1981,12 +2119,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: false,
 		CreditCard: "5272 Master Card",
-		History: {
-			UpdatedDate: "2024-01-28 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-01-28 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -2008,12 +2148,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "4720 Visa",
-		History: {
-			UpdatedDate: "2024-09-22 10:55:54",
-			MissingInformation: "qty",
-			Status: "failed",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-09-22 10:55:54",
+				MissingInformation: "qty",
+				Status: "failed",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -2035,12 +2177,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "9417 Master Card",
-		History: {
-			UpdatedDate: "2024-06-09 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-06-09 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "The Phantom of the Opera Broadway Show",
@@ -2061,12 +2205,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "8990 Master Card",
-		History: {
-			UpdatedDate: "2024-10-22 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-10-22 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -2087,12 +2233,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "3080 Visa",
-		History: {
-			UpdatedDate: "2024-04-25 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-04-25 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -2119,12 +2267,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: false,
 		CreditCard: "1465 Master Card",
-		History: {
-			UpdatedDate: "2024-07-18 10:55:54",
-			MissingInformation: "row",
-			Status: "failed",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-07-18 10:55:54",
+				MissingInformation: "row",
+				Status: "failed",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -2146,12 +2296,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "2482 Master Card",
-		History: {
-			UpdatedDate: "2024-05-03 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-05-03 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -2173,12 +2325,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "1817 Visa",
-		History: {
-			UpdatedDate: "2024-06-01 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-06-01 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -2199,12 +2353,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "9741 Visa",
-		History: {
-			UpdatedDate: "2024-07-11 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-07-11 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "The Phantom of the Opera Broadway Show",
@@ -2226,12 +2382,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "8444 Visa",
-		History: {
-			UpdatedDate: "2023-12-26 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2023-12-26 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -2253,12 +2411,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "4015 Visa",
-		History: {
-			UpdatedDate: "2024-02-10 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-02-10 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -2285,12 +2445,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: true,
 		CreditCard: "5843 Master Card",
-		History: {
-			UpdatedDate: "2024-02-12 10:55:54",
-			MissingInformation: "row",
-			Status: "failed",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-02-12 10:55:54",
+				MissingInformation: "row",
+				Status: "failed",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -2311,12 +2473,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "4705 Master Card",
-		History: {
-			UpdatedDate: "2024-04-07 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-04-07 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -2337,12 +2501,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "3672 Master Card",
-		History: {
-			UpdatedDate: "2024-10-22 10:55:54",
-			MissingInformation: "attachment",
-			Status: "failed",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-10-22 10:55:54",
+				MissingInformation: "attachment",
+				Status: "failed",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -2364,12 +2530,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "5053 Visa",
-		History: {
-			UpdatedDate: "2024-03-19 10:55:54",
-			MissingInformation: "qty",
-			Status: "failed",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-03-19 10:55:54",
+				MissingInformation: "qty",
+				Status: "failed",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -2391,12 +2559,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "2986 Visa",
-		History: {
-			UpdatedDate: "2024-04-14 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-04-14 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -2418,12 +2588,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "9942 Visa",
-		History: {
-			UpdatedDate: "2024-05-27 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-05-27 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -2445,12 +2617,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "5432 Master Card",
-		History: {
-			UpdatedDate: "2023-11-29 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2023-11-29 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -2472,12 +2646,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "2410 Visa",
-		History: {
-			UpdatedDate: "2024-01-31 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-01-31 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -2499,12 +2675,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "1560 Master Card",
-		History: {
-			UpdatedDate: "2024-12-06 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-12-06 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -2526,12 +2704,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "2536 Master Card",
-		History: {
-			UpdatedDate: "2024-06-06 10:55:54",
-			MissingInformation: "section",
-			Status: "failed",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-06-06 10:55:54",
+				MissingInformation: "section",
+				Status: "failed",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -2558,12 +2738,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: true,
 		CreditCard: "4558 Master Card",
-		History: {
-			UpdatedDate: "2024-09-27 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-09-27 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -2585,12 +2767,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "3226 Visa",
-		History: {
-			UpdatedDate: "2024-06-14 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-06-14 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -2612,12 +2796,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "8425 Visa",
-		History: {
-			UpdatedDate: "2024-06-17 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-06-17 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -2638,12 +2824,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "1808 Master Card",
-		History: {
-			UpdatedDate: "2023-12-13 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2023-12-13 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -2670,12 +2858,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: true,
 		CreditCard: "9937 Master Card",
-		History: {
-			UpdatedDate: "2024-06-02 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-06-02 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -2696,12 +2886,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "2580 Visa",
-		History: {
-			UpdatedDate: "2023-12-02 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2023-12-02 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -2728,12 +2920,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: false,
 		CreditCard: "7369 Master Card",
-		History: {
-			UpdatedDate: "2024-03-21 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-03-21 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -2760,12 +2954,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: true,
 		CreditCard: "1669 Master Card",
-		History: {
-			UpdatedDate: "2024-03-03 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-03-03 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -2787,12 +2983,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "4024 Visa",
-		History: {
-			UpdatedDate: "2024-03-26 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-03-26 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -2814,12 +3012,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "9167 Master Card",
-		History: {
-			UpdatedDate: "2024-07-05 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-07-05 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -2841,12 +3041,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "9000 Visa",
-		History: {
-			UpdatedDate: "2024-06-18 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-06-18 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "The Phantom of the Opera Broadway Show",
@@ -2868,12 +3070,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "9970 Master Card",
-		History: {
-			UpdatedDate: "2024-08-15 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-08-15 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "The Phantom of the Opera Broadway Show",
@@ -2895,12 +3099,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "5597 Master Card",
-		History: {
-			UpdatedDate: "2024-05-12 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-05-12 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -2922,12 +3128,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "1127 Master Card",
-		History: {
-			UpdatedDate: "2024-08-28 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-08-28 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -2949,12 +3157,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "7469 Master Card",
-		History: {
-			UpdatedDate: "2024-01-01 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-01-01 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -2976,12 +3186,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "1504 Master Card",
-		History: {
-			UpdatedDate: "2024-04-04 10:55:54",
-			MissingInformation: "section",
-			Status: "failed",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-04-04 10:55:54",
+				MissingInformation: "section",
+				Status: "failed",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "The Phantom of the Opera Broadway Show",
@@ -3003,12 +3215,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "9001 Visa",
-		History: {
-			UpdatedDate: "2023-12-22 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2023-12-22 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -3029,12 +3243,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "3054 Master Card",
-		History: {
-			UpdatedDate: "2024-10-07 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-10-07 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -3056,12 +3272,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "6354 Master Card",
-		History: {
-			UpdatedDate: "2024-12-03 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-12-03 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -3083,12 +3301,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "7841 Visa",
-		History: {
-			UpdatedDate: "2023-12-18 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2023-12-18 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -3110,12 +3330,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "4010 Master Card",
-		History: {
-			UpdatedDate: "2024-02-24 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-02-24 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -3137,12 +3359,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "8394 Master Card",
-		History: {
-			UpdatedDate: "2024-08-05 10:55:54",
-			MissingInformation: "seats",
-			Status: "failed",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-08-05 10:55:54",
+				MissingInformation: "seats",
+				Status: "failed",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "The Phantom of the Opera Broadway Show",
@@ -3163,12 +3387,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "1406 Master Card",
-		History: {
-			UpdatedDate: "2024-06-10 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-06-10 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -3190,12 +3416,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "8639 Visa",
-		History: {
-			UpdatedDate: "2024-04-17 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-04-17 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -3216,12 +3444,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "8685 Master Card",
-		History: {
-			UpdatedDate: "2024-06-15 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-06-15 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -3248,12 +3478,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: true,
 		CreditCard: "8521 Master Card",
-		History: {
-			UpdatedDate: "2024-06-03 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-06-03 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -3280,12 +3512,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: true,
 		CreditCard: "1138 Visa",
-		History: {
-			UpdatedDate: "2024-06-07 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-06-07 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -3307,12 +3541,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "2346 Visa",
-		History: {
-			UpdatedDate: "2024-07-13 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-07-13 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -3334,12 +3570,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "2660 Master Card",
-		History: {
-			UpdatedDate: "2024-04-28 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-04-28 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "The Phantom of the Opera Broadway Show",
@@ -3360,12 +3598,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "6098 Master Card",
-		History: {
-			UpdatedDate: "2024-04-09 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-04-09 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -3392,12 +3632,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: false,
 		CreditCard: "7799 Visa",
-		History: {
-			UpdatedDate: "2023-12-22 10:55:54",
-			MissingInformation: "seats",
-			Status: "failed",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2023-12-22 10:55:54",
+				MissingInformation: "seats",
+				Status: "failed",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -3419,12 +3661,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "8000 Visa",
-		History: {
-			UpdatedDate: "2024-07-20 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-07-20 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -3445,12 +3689,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "5707 Master Card",
-		History: {
-			UpdatedDate: "2024-09-07 10:55:54",
-			MissingInformation: "qty",
-			Status: "failed",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-09-07 10:55:54",
+				MissingInformation: "qty",
+				Status: "failed",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -3471,12 +3717,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "9232 Master Card",
-		History: {
-			UpdatedDate: "2024-01-28 10:55:54",
-			MissingInformation: "qty",
-			Status: "failed",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-01-28 10:55:54",
+				MissingInformation: "qty",
+				Status: "failed",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -3498,12 +3746,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "2394 Master Card",
-		History: {
-			UpdatedDate: "2024-03-31 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-03-31 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -3530,12 +3780,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: false,
 		CreditCard: "9806 Master Card",
-		History: {
-			UpdatedDate: "2024-06-06 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-06-06 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -3562,12 +3814,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: false,
 		CreditCard: "9064 Master Card",
-		History: {
-			UpdatedDate: "2024-01-01 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-01-01 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -3594,12 +3848,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: false,
 		CreditCard: "2171 Visa",
-		History: {
-			UpdatedDate: "2024-07-28 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-07-28 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "The Phantom of the Opera Broadway Show",
@@ -3626,12 +3882,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: true,
 		CreditCard: "3345 Master Card",
-		History: {
-			UpdatedDate: "2024-05-01 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-05-01 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -3653,12 +3911,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "4697 Master Card",
-		History: {
-			UpdatedDate: "2024-03-01 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-03-01 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -3685,12 +3945,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: false,
 		CreditCard: "4031 Visa",
-		History: {
-			UpdatedDate: "2024-07-08 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-07-08 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -3712,12 +3974,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "3933 Master Card",
-		History: {
-			UpdatedDate: "2024-01-16 10:55:54",
-			MissingInformation: "row",
-			Status: "failed",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-01-16 10:55:54",
+				MissingInformation: "row",
+				Status: "failed",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -3738,12 +4002,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "6294 Master Card",
-		History: {
-			UpdatedDate: "2023-12-18 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2023-12-18 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -3770,12 +4036,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: true,
 		CreditCard: "3013 Master Card",
-		History: {
-			UpdatedDate: "2024-06-04 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-06-04 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -3802,12 +4070,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: false,
 		CreditCard: "3548 Visa",
-		History: {
-			UpdatedDate: "2023-12-14 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2023-12-14 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -3828,12 +4098,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "7288 Visa",
-		History: {
-			UpdatedDate: "2024-02-10 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-02-10 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -3854,12 +4126,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "1925 Visa",
-		History: {
-			UpdatedDate: "2023-12-26 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2023-12-26 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -3886,12 +4160,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: false,
 		CreditCard: "2923 Master Card",
-		History: {
-			UpdatedDate: "2024-01-08 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-01-08 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -3912,12 +4188,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "2839 Visa",
-		History: {
-			UpdatedDate: "2024-03-06 10:55:54",
-			MissingInformation: "seats",
-			Status: "failed",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-03-06 10:55:54",
+				MissingInformation: "seats",
+				Status: "failed",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -3939,12 +4217,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "8054 Master Card",
-		History: {
-			UpdatedDate: "2024-01-15 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-01-15 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "The Phantom of the Opera Broadway Show",
@@ -3965,12 +4245,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "6275 Master Card",
-		History: {
-			UpdatedDate: "2024-03-17 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-03-17 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -3991,12 +4273,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "5466 Master Card",
-		History: {
-			UpdatedDate: "2024-09-26 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-09-26 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -4023,12 +4307,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: true,
 		CreditCard: "8866 Visa",
-		History: {
-			UpdatedDate: "2024-11-24 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-11-24 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "The Phantom of the Opera Broadway Show",
@@ -4049,12 +4335,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "7133 Visa",
-		History: {
-			UpdatedDate: "2023-12-07 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2023-12-07 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -4076,12 +4364,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "8375 Visa",
-		History: {
-			UpdatedDate: "2024-04-15 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-04-15 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "The Phantom of the Opera Broadway Show",
@@ -4108,12 +4398,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: true,
 		CreditCard: "1429 Visa",
-		History: {
-			UpdatedDate: "2023-12-12 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2023-12-12 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -4140,12 +4432,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: true,
 		CreditCard: "7123 Visa",
-		History: {
-			UpdatedDate: "2024-04-15 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-04-15 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -4167,12 +4461,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "4217 Visa",
-		History: {
-			UpdatedDate: "2024-01-16 10:55:54",
-			MissingInformation: "section",
-			Status: "failed",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-01-16 10:55:54",
+				MissingInformation: "section",
+				Status: "failed",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -4194,12 +4490,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "2946 Master Card",
-		History: {
-			UpdatedDate: "2024-08-08 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-08-08 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -4220,12 +4518,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "9897 Visa",
-		History: {
-			UpdatedDate: "2023-12-06 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2023-12-06 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -4247,12 +4547,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "6688 Master Card",
-		History: {
-			UpdatedDate: "2023-12-10 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2023-12-10 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "The Phantom of the Opera Broadway Show",
@@ -4279,12 +4581,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: false,
 		CreditCard: "9076 Master Card",
-		History: {
-			UpdatedDate: "2024-12-03 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-12-03 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -4306,12 +4610,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "3447 Master Card",
-		History: {
-			UpdatedDate: "2024-09-18 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-09-18 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -4338,12 +4644,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: true,
 		CreditCard: "9707 Master Card",
-		History: {
-			UpdatedDate: "2024-02-25 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-02-25 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -4365,12 +4673,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "7692 Master Card",
-		History: {
-			UpdatedDate: "2024-01-05 10:55:54",
-			MissingInformation: "section",
-			Status: "failed",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-01-05 10:55:54",
+				MissingInformation: "section",
+				Status: "failed",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "The Phantom of the Opera Broadway Show",
@@ -4391,12 +4701,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "9659 Master Card",
-		History: {
-			UpdatedDate: "2024-05-04 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-05-04 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -4423,12 +4735,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: false,
 		CreditCard: "2055 Visa",
-		History: {
-			UpdatedDate: "2024-06-16 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-06-16 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -4455,12 +4769,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: false,
 		CreditCard: "1873 Master Card",
-		History: {
-			UpdatedDate: "2024-02-24 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-02-24 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "The Phantom of the Opera Broadway Show",
@@ -4482,12 +4798,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "2053 Visa",
-		History: {
-			UpdatedDate: "2024-04-17 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-04-17 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -4509,12 +4827,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "4466 Visa",
-		History: {
-			UpdatedDate: "2024-01-16 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-01-16 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -4536,12 +4856,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "2736 Master Card",
-		History: {
-			UpdatedDate: "2024-10-05 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-10-05 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "The Phantom of the Opera Broadway Show",
@@ -4568,12 +4890,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: true,
 		CreditCard: "8929 Master Card",
-		History: {
-			UpdatedDate: "2024-01-07 10:55:54",
-			MissingInformation: "seats",
-			Status: "failed",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-01-07 10:55:54",
+				MissingInformation: "seats",
+				Status: "failed",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -4595,12 +4919,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "4232 Visa",
-		History: {
-			UpdatedDate: "2024-03-14 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-03-14 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -4621,12 +4947,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "2365 Visa",
-		History: {
-			UpdatedDate: "2024-01-15 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-01-15 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -4653,12 +4981,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: true,
 		CreditCard: "3548 Master Card",
-		History: {
-			UpdatedDate: "2023-12-15 10:55:54",
-			MissingInformation: "row",
-			Status: "failed",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2023-12-15 10:55:54",
+				MissingInformation: "row",
+				Status: "failed",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -4680,12 +5010,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "8301 Master Card",
-		History: {
-			UpdatedDate: "2024-02-26 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-02-26 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -4707,12 +5039,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "2508 Visa",
-		History: {
-			UpdatedDate: "2024-08-16 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-08-16 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -4734,12 +5068,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "6999 Visa",
-		History: {
-			UpdatedDate: "2024-11-06 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-11-06 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -4761,12 +5097,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "1196 Visa",
-		History: {
-			UpdatedDate: "2024-06-10 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-06-10 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "The Phantom of the Opera Broadway Show",
@@ -4788,12 +5126,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "3125 Visa",
-		History: {
-			UpdatedDate: "2024-02-06 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-02-06 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -4820,12 +5160,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: false,
 		CreditCard: "6387 Visa",
-		History: {
-			UpdatedDate: "2024-02-29 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-02-29 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -4846,12 +5188,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "1841 Visa",
-		History: {
-			UpdatedDate: "2024-07-14 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-07-14 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -4872,12 +5216,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "8114 Master Card",
-		History: {
-			UpdatedDate: "2024-06-21 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-06-21 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -4899,12 +5245,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "7996 Visa",
-		History: {
-			UpdatedDate: "2024-04-03 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-04-03 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -4926,12 +5274,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "9071 Master Card",
-		History: {
-			UpdatedDate: "2023-12-27 10:55:54",
-			MissingInformation: "qty",
-			Status: "failed",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2023-12-27 10:55:54",
+				MissingInformation: "qty",
+				Status: "failed",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -4952,12 +5302,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "5241 Visa",
-		History: {
-			UpdatedDate: "2023-12-06 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2023-12-06 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -4979,12 +5331,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "1250 Visa",
-		History: {
-			UpdatedDate: "2024-06-08 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-06-08 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -5005,12 +5359,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "7545 Master Card",
-		History: {
-			UpdatedDate: "2024-01-07 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-01-07 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -5031,12 +5387,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "8936 Visa",
-		History: {
-			UpdatedDate: "2024-02-03 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-02-03 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -5058,12 +5416,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "5688 Master Card",
-		History: {
-			UpdatedDate: "2024-10-18 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-10-18 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -5084,12 +5444,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "9180 Visa",
-		History: {
-			UpdatedDate: "2024-02-17 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-02-17 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -5110,12 +5472,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "6082 Visa",
-		History: {
-			UpdatedDate: "2024-02-25 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-02-25 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -5136,12 +5500,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "8107 Master Card",
-		History: {
-			UpdatedDate: "2024-08-06 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-08-06 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "The Phantom of the Opera Broadway Show",
@@ -5162,12 +5528,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "2981 Master Card",
-		History: {
-			UpdatedDate: "2024-03-22 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-03-22 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -5194,12 +5562,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: true,
 		CreditCard: "8460 Master Card",
-		History: {
-			UpdatedDate: "2024-04-06 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-04-06 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -5220,12 +5590,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "3782 Visa",
-		History: {
-			UpdatedDate: "2024-04-08 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-04-08 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -5247,12 +5619,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "8516 Visa",
-		History: {
-			UpdatedDate: "2024-06-07 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-06-07 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -5274,12 +5648,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "3801 Master Card",
-		History: {
-			UpdatedDate: "2024-06-14 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-06-14 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -5306,12 +5682,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: false,
 		CreditCard: "1112 Master Card",
-		History: {
-			UpdatedDate: "2024-01-30 10:55:54",
-			MissingInformation: "qty",
-			Status: "failed",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-01-30 10:55:54",
+				MissingInformation: "qty",
+				Status: "failed",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -5332,12 +5710,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "5697 Visa",
-		History: {
-			UpdatedDate: "2024-01-17 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-01-17 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -5358,12 +5738,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "2511 Visa",
-		History: {
-			UpdatedDate: "2024-09-27 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-09-27 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -5385,12 +5767,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "4584 Visa",
-		History: {
-			UpdatedDate: "2024-01-01 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-01-01 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -5412,12 +5796,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "1018 Visa",
-		History: {
-			UpdatedDate: "2023-12-15 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2023-12-15 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Los Angeles Lakers at Toronto Raptors",
@@ -5438,12 +5824,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "7245 Master Card",
-		History: {
-			UpdatedDate: "2024-03-31 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-03-31 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -5465,12 +5853,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "1760 Visa",
-		History: {
-			UpdatedDate: "2024-10-06 10:55:54",
-			MissingInformation: "attachment",
-			Status: "failed",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-10-06 10:55:54",
+				MissingInformation: "attachment",
+				Status: "failed",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -5497,12 +5887,14 @@ const purchaseOrders = [
 		},
 		IsDeliveryDelay: false,
 		CreditCard: "9536 Visa",
-		History: {
-			UpdatedDate: "2024-02-12 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "User",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-02-12 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "User",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -5523,12 +5915,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "8146 Visa",
-		History: {
-			UpdatedDate: "2024-02-07 10:55:54",
-			MissingInformation: "seats",
-			Status: "failed",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-02-07 10:55:54",
+				MissingInformation: "seats",
+				Status: "failed",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Chicago Bulls at Miami Heat",
@@ -5549,12 +5943,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "2517 Master Card",
-		History: {
-			UpdatedDate: "2024-03-21 10:55:54",
-			MissingInformation: "section",
-			Status: "failed",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-03-21 10:55:54",
+				MissingInformation: "section",
+				Status: "failed",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 	{
 		EventName: "New York Giants at Detroit Lions",
@@ -5575,12 +5971,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: false,
 		CreditCard: "6491 Visa",
-		History: {
-			UpdatedDate: "2024-05-08 10:55:54",
-			MissingInformation: "seats",
-			Status: "failed",
-			UpdatedBy: "Stage Front",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-05-08 10:55:54",
+				MissingInformation: "seats",
+				Status: "failed",
+				UpdatedBy: "Stage Front",
+			},
+		],
 	},
 	{
 		EventName: "Boston Symphony Orchestra",
@@ -5601,12 +5999,14 @@ const purchaseOrders = [
 		IsAttachment: false,
 		IsDeliveryDelay: true,
 		CreditCard: "5290 Master Card",
-		History: {
-			UpdatedDate: "2024-10-03 10:55:54",
-			MissingInformation: "none",
-			Status: "updated",
-			UpdatedBy: "Automated System",
-		},
+		History: [
+			{
+				UpdatedDate: "2024-10-03 10:55:54",
+				MissingInformation: "none",
+				Status: "updated",
+				UpdatedBy: "Automated System",
+			},
+		],
 	},
 ];
 

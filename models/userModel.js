@@ -105,7 +105,7 @@ const userSchema = new mongoose.Schema({
 			type: Boolean,
 			default: true,
 		},
-		POSID: {
+		OrderID: {
 			type: Boolean,
 			default: false,
 		},

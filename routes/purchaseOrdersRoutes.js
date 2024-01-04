@@ -4,6 +4,9 @@ const authController = require("../controllers/authController");
 
 const router = express.Router();
 
-router.get("/", authController.protect, purchaseOrdersController.getOrdersAndStatistics);
+router
+	.route("/")
+	.get(authController.protect, purchaseOrdersController.getOrdersAndStatistics)
+	.post(authController.protect, purchaseOrdersController.createPurchaseOrder);
 
 module.exports = router;
