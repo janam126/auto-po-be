@@ -9,4 +9,6 @@ router
 	.get(authController.protect, purchaseOrdersController.getOrdersAndStatistics)
 	.post(authController.protect, purchaseOrdersController.createPurchaseOrder);
 
+router.route("/:id").patch(authController.protect, purchaseOrdersController.editPurchaseOrder);
+
 module.exports = router;

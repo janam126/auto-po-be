@@ -45,3 +45,37 @@ exports.createPurchaseOrder = async (req, res, next) => {
 		return next(new AppError(error, 403));
 	}
 };
+
+exports.editPurchaseOrder = async (req, res, next) => {
+	try {
+		const orderId = req.params.id;
+
+		const { History, ...updatedBody } = req.body;
+
+		if (History.UpdatedDate)
+			return next(
+				new AppError("Remove UpdatedDate property, it will be added automatically", 400)
+			);
+
+		const order = await PurchaseOrders.findByIdAndUpdate(
+			orderId,
+			{
+				...updatedBody,
+				$push: {
+					History,
+				},
+			},
+			{ new: true, runValidators: true }
+		);
+
+		if (!order) return next(new AppError("Purchase order doesn't exist", 400));
+
+		res.status(200).json({
+			status: "success",
+			message: "Purchase order edited",
+			data: order,
+		});
+	} catch (error) {
+		return next(new AppError(error, 400));
+	}
+};

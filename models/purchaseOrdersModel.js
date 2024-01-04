@@ -79,6 +79,7 @@ const purchaseOrdersSchema = new mongoose.Schema({
 		},
 		uploadDate: {
 			type: Date,
+			default: Date.now,
 		},
 	},
 	IsDeliveryDelay: {
@@ -93,7 +94,7 @@ const purchaseOrdersSchema = new mongoose.Schema({
 		{
 			UpdatedDate: {
 				type: Date,
-				required: true,
+				default: Date.now,
 			},
 			MissingInformation: {
 				type: String,
