@@ -54,7 +54,6 @@ exports.editPurchaseOrder = async (req, res, next) => {
 		const { History, ...updatedBody } = req.body;
 
 		// Can add later
-
 		// if (History.UpdatedDate)
 		// 	return next(
 		// 		new AppError("Remove UpdatedDate property, it will be added automatically", 400)
