@@ -20,8 +20,8 @@ exports.getOrdersAndStatistics = async (_req, res, next) => {
 			data: {
 				statistics: {
 					past24h: statistics(),
-					past2days: statistics(),
 					past7days: statistics(),
+					past30days: statistics(),
 				},
 				orders: response,
 			},
@@ -49,7 +49,7 @@ exports.createPurchaseOrder = async (req, res, next) => {
 
 exports.editPurchaseOrder = async (req, res, next) => {
 	try {
-		const orderId = req.params.id;
+		const OrderID = req.params.id;
 
 		const { History, ...updatedBody } = req.body;
 
@@ -58,8 +58,8 @@ exports.editPurchaseOrder = async (req, res, next) => {
 				new AppError("Remove UpdatedDate property, it will be added automatically", 400)
 			);
 
-		const order = await PurchaseOrders.findByIdAndUpdate(
-			orderId,
+		const order = await PurchaseOrders.findOneAndUpdate(
+			{ OrderID },
 			{
 				...updatedBody,
 				$push: {
