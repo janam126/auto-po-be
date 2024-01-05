@@ -4,7 +4,10 @@ const getRngFrom = require("../utils/getRngFrom");
 
 exports.getOrdersAndStatistics = async (_req, res, next) => {
 	try {
-		const response = await PurchaseOrders.find({});
+		const response = await PurchaseOrders.find().populate({
+			path: "History.UpdatedBy",
+			select: "firstName lastName",
+		});
 
 		const statistics = () => ({
 			email: getRngFrom(100, 900),
@@ -53,18 +56,23 @@ exports.editPurchaseOrder = async (req, res, next) => {
 
 		const { History, ...updatedBody } = req.body;
 
-		// Can add later
-		// if (History.UpdatedDate)
-		// 	return next(
-		// 		new AppError("Remove UpdatedDate property, it will be added automatically", 400)
-		// 	);
+		if (History)
+			return next(
+				new AppError("Remove History property, it will be added automatically", 400)
+			);
+
+		const updatedHistory = {
+			MissingInformation: "none",
+			Status: "updated",
+			UpdatedBy: req.user._id,
+		};
 
 		const order = await PurchaseOrders.findOneAndUpdate(
 			{ OrderID },
 			{
 				...updatedBody,
 				$push: {
-					History,
+					History: updatedHistory,
 				},
 			},
 			{ new: true, runValidators: true }

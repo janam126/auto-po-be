@@ -105,8 +105,9 @@ const purchaseOrdersSchema = new mongoose.Schema({
 				enum: ["updated", "failed", "pending"],
 			},
 			UpdatedBy: {
-				type: String,
-				required: true,
+				type: mongoose.Schema.Types.ObjectId,
+				ref: "User",
+				requred: true,
 			},
 		},
 	],
