@@ -53,10 +53,12 @@ exports.editPurchaseOrder = async (req, res, next) => {
 
 		const { History, ...updatedBody } = req.body;
 
-		if (History.UpdatedDate)
-			return next(
-				new AppError("Remove UpdatedDate property, it will be added automatically", 400)
-			);
+		// Can add later
+
+		// if (History.UpdatedDate)
+		// 	return next(
+		// 		new AppError("Remove UpdatedDate property, it will be added automatically", 400)
+		// 	);
 
 		const order = await PurchaseOrders.findOneAndUpdate(
 			{ OrderID },
