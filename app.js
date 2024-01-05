@@ -8,6 +8,7 @@ const rateLimit = require("express-rate-limit");
 const appController = require("./controllers/appController");
 const userRouter = require("./routes/userRoutes");
 const purchaseOrdersRouter = require("./routes/purchaseOrdersRoutes");
+const supportRouter = require("./routes/supportRoutes");
 
 const app = express();
 
@@ -49,6 +50,7 @@ if (process.env.NODE_ENVIRONMENT === "development") {
 // App routes
 app.use("/api/v1/user", userRouter);
 app.use("/api/v1/purchaseOrders", purchaseOrdersRouter);
+app.use("/api/v1/support", supportRouter);
 
 // Extra middlewares
 app.get("/api/v1/health", appController.healthController);
