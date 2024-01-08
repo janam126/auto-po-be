@@ -107,7 +107,7 @@ const purchaseOrdersSchema = new mongoose.Schema({
 			UpdatedBy: {
 				type: mongoose.Schema.Types.ObjectId,
 				ref: "User",
-				requred: true,
+				required: true,
 			},
 		},
 	],
