@@ -20,6 +20,6 @@ const supportSchema = new mongoose.Schema({
 	},
 });
 
-const Support = mongoose.model("Support", supportSchema);
+const Support = mongoose.model("Support", supportSchema, "supportTickets");
 
 module.exports = Support;
