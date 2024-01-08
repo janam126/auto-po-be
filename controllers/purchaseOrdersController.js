@@ -57,7 +57,7 @@ exports.editPurchaseOrder = async (req, res, next) => {
 		// Note:
 		// If you make a request with History key value pair it will only Re-Sync the event,
 		// that means it will only be updated, refreshed with all the existing properties
-		// But if you make a request without the History key value pari it will eidt the event and it will
+		// But if you make a request without the History key value pair it will edit the event and it will
 		// count as Updated, so new History object with info will be added to the History array
 
 		const { History, ...updatedBody } = req.body;
