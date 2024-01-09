@@ -9,6 +9,8 @@ router
 	.get(authController.protect, purchaseOrdersController.getOrdersAndStatistics)
 	.post(authController.protect, purchaseOrdersController.createPurchaseOrder);
 
+router.route("/pdf").get(purchaseOrdersController.downloadStatisticsPDF);
+
 router.route("/:id").patch(authController.protect, purchaseOrdersController.editPurchaseOrder);
 
 module.exports = router;

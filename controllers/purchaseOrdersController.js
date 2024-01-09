@@ -3,9 +3,9 @@ const PurchaseOrders = require("../models/purchaseOrdersModel");
 const {
 	countNullFields,
 	filterFromDate,
-	currentDayMinusDays,
 	filterUniqueEmails,
 } = require("../utils/statisticsHelper");
+const { PDFDocument, StandardFonts, rgb } = require("pdf-lib");
 
 exports.getOrdersAndStatistics = async (_req, res, next) => {
 	try {
@@ -64,7 +64,7 @@ exports.editPurchaseOrder = async (req, res, next) => {
 		// Note:
 		// If you make a request with History key value pair it will only Re-Sync the event,
 		// that means it will only be updated, refreshed with all the existing properties
-		// But if you make a request without the History key value pari it will eidt the event and it will
+		// But if you make a request without the History key value pair it will update the event and it will
 		// count as Updated, so new History object with info will be added to the History array
 
 		const { History, ...updatedBody } = req.body;
@@ -96,6 +96,32 @@ exports.editPurchaseOrder = async (req, res, next) => {
 			message: "Purchase order edited",
 			data: order,
 		});
+	} catch (error) {
+		return next(new AppError(error, 400));
+	}
+};
+
+exports.downloadStatisticsPDF = async (_req, res, next) => {
+	try {
+		const pdfDoc = await PDFDocument.create();
+		const timesRomanFont = await pdfDoc.embedFont(StandardFonts.TimesRoman);
+		const page = pdfDoc.addPage();
+		const { height } = page.getSize();
+
+		const fontSize = 30;
+		page.drawText("Random DPF text", {
+			x: 50,
+			y: height - 4 * fontSize,
+			size: fontSize,
+			font: timesRomanFont,
+			color: rgb(0, 0, 0),
+		});
+
+		const pdfBytes = await pdfDoc.save();
+
+		res.setHeader("Content-Type", "application/pdf");
+
+		res.status(200).send(pdfBytes);
 	} catch (error) {
 		return next(new AppError(error, 400));
 	}
