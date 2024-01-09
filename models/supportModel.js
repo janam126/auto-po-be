@@ -5,7 +5,7 @@ const supportSchema = new mongoose.Schema({
 		type: String,
 		required: [true, "Title is required"],
 		minlength: [2, "Title must be at least 2 characters"],
-		maxlength: [40, "Can't be more than 40 characters"],
+		maxlength: [120, "Can't be more than 120 characters"],
 	},
 	info: {
 		type: String,
