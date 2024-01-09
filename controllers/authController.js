@@ -106,7 +106,7 @@ exports.protect = async (req, _res, next) => {
 exports.restrictTo = (...roles) => {
 	return async (req, _res, next) => {
 		if (!roles.includes(req.user.role)) {
-			return next(new AppError("No persmission. Only ADMINS can access all users route", 403));
+			return next(new AppError("No persmission. Only ADMINS can access this resource", 403));
 		}
 		next();
 	};
