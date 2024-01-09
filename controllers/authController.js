@@ -121,7 +121,7 @@ exports.forgotPassword = async (req, res, next) => {
 		if (!user) return next(new AppError("User with this email doesn't exist", 400));
 
 		const resetToken = jwtSigning.signEmail(user.email);
-		const resetURL = `http://localhost:3000/reset-password?token=${resetToken}`;
+		const resetURL = `https://apo-pi.vercel.app/reset-password?token=${resetToken}`;
 
 		await sendEmail(user.email, resetURL);
 
