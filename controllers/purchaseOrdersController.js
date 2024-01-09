@@ -17,13 +17,10 @@ exports.getOrdersAndStatistics = async (_req, res, next) => {
 		const documentToObject = JSON.parse(JSON.stringify(response));
 
 		const statistics = (days) => ({
-			email: filterFromDate(filterUniqueEmails(documentToObject), currentDayMinusDays(days)),
-			poCreated: filterFromDate(documentToObject, currentDayMinusDays(days)),
+			email: filterFromDate(filterUniqueEmails(documentToObject), days),
+			poCreated: filterFromDate(documentToObject, days),
 			thanLastWeek: 69,
-			missingInformation: filterFromDate(
-				countNullFields(documentToObject),
-				currentDayMinusDays(days)
-			),
+			missingInformation: filterFromDate(countNullFields(documentToObject), days),
 		});
 
 		res.status(200).json({
