@@ -70,13 +70,7 @@ exports.protect = async (req, _res, next) => {
 		if (!token) return next(new AppError("Token not provided.", 400));
 
 		// 2 - Decode token and see if valid/expired
-		let decoded;
-		try {
-			let response = await util.promisify(jwt.verify)(token, process.env.JWT_SECRET);
-			decoded = response;
-		} catch (error) {
-			return next(new AppError(error.message, 400));
-		}
+		const decoded = jwtVerification(token);
 
 		// 3 - See if user exists
 		const user = await User.findById(decoded.id);
