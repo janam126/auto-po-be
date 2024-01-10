@@ -5,6 +5,7 @@ const jwt = require("jsonwebtoken");
 const util = require("util");
 const getLocalTimestamp = require("../utils/getLocalTimestamp");
 const sendEmail = require("../utils/sendEmail");
+const jwtVerification = require("../utils/jwtVerification");
 
 exports.singup = async (req, res, next) => {
 	try {
@@ -141,7 +142,11 @@ exports.resetPassword = async (req, res, next) => {
 		if (!token || !newPassword)
 			return next(new AppError("Token or newPassword not provided", 400));
 
-		const decoded = jwt.verify(token, process.env.JWT_SECRET);
+		const decoded = jwtVerification(
+			token,
+			"Your password reset session has expired. Please request a new password reset.",
+			"Invalid or expired password reset link. Please request a new link."
+		);
 
 		// Find the user
 		const user = await User.findOne({ email: decoded.email });
@@ -150,13 +155,6 @@ exports.resetPassword = async (req, res, next) => {
 		if (user.password === newPassword) {
 			return next(new AppError("Cannot be a previously used password!", 400));
 		}
-
-		// Could have done it this way as well!
-		// Update the password and save the user
-
-		// Code -
-		// user.password = newPassword;
-		// await user.save();
 
 		const updatedUser = await User.updateOne(
 			{ email: decoded.email },
