@@ -28,6 +28,12 @@ const purchaseOrdersSchema = new mongoose.Schema({
 	Seats: {
 		type: [Number],
 		required: true,
+		validate: {
+			validator: function (array) {
+				return array.length > 0; // Check that the array is not empty
+			},
+			message: "Seats array must not be empty",
+		},
 	},
 	Cost: {
 		type: Number,
