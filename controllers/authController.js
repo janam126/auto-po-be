@@ -1,7 +1,6 @@
 const User = require("../models/userModel");
 const AppError = require("../utils/AppError");
 const jwtSigning = require("../utils/jwtSigning");
-const jwt = require("jsonwebtoken");
 const util = require("util");
 const getLocalTimestamp = require("../utils/getLocalTimestamp");
 const sendEmail = require("../utils/sendEmail");
@@ -116,7 +115,7 @@ exports.forgotPassword = async (req, res, next) => {
 		if (!user) return next(new AppError("User with this email doesn't exist", 400));
 
 		const resetToken = jwtSigning.signEmail(user.email);
-		const resetURL = `https://apo-pi.vercel.app/reset-password?token=${resetToken}`;
+		const resetURL = `${process.env.FRONTEND_URL}/reset-password?token=${resetToken}`;
 
 		await sendEmail(user.email, resetURL);
 
@@ -136,11 +135,10 @@ exports.resetPassword = async (req, res, next) => {
 		if (!token || !newPassword)
 			return next(new AppError("Token or newPassword not provided", 400));
 
-		const decoded = jwtVerification(
-			token,
-			"Your password reset session has expired. Please request a new password reset.",
-			"Invalid or expired password reset link. Please request a new link."
-		);
+		const decoded = jwtVerification(token, {
+			error: "Your password reset session has expired. Please request a new password reset.",
+			invalid: "Invalid or expired password reset link. Please request a new link.",
+		});
 
 		// Find the user
 		const user = await User.findOne({ email: decoded.email });
