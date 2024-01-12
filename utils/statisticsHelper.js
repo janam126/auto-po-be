@@ -13,8 +13,8 @@ exports.currentDayMinusDays = (days) => {
 exports.filterFromDate = (array, targetDate) => {
 	const targetDateTime = this.currentDayMinusDays(targetDate);
 	return array.filter((item) => {
-		const poCreationTime = new Date(item.CreationDate ?? undefined).getTime();
-		return poCreationTime >= targetDateTime && poCreationTime <= Date.now();
+		const poDate = new Date(item.EventDate ?? undefined).getTime();
+		return poDate >= targetDateTime && poDate <= Date.now();
 	}).length;
 };
 
