@@ -61,6 +61,16 @@ const userSchema = new mongoose.Schema({
 		default: true,
 	},
 	settings: {
+		emailWhenPoCreated: {
+			type: Boolean,
+			default: true,
+		},
+		emailWhenPoHasMissingInfo: {
+			type: Boolean,
+			default: true,
+		},
+	},
+	columnSettings: {
 		EventName: {
 			type: Boolean,
 			default: true,

@@ -1,14 +1,13 @@
 const User = require("../models/userModel");
 const AppError = require("../utils/AppError");
 const jwtSigning = require("../utils/jwtSigning");
-const util = require("util");
 const getLocalTimestamp = require("../utils/getLocalTimestamp");
 const sendEmail = require("../utils/sendEmail");
 const jwtVerification = require("../utils/jwtVerification");
 
 exports.singup = async (req, res, next) => {
 	try {
-		const { active, settings, role, passwordChangedAt, ...filteredBody } = req.body;
+		const { active, columnsettings, role, passwordChangedAt, ...filteredBody } = req.body;
 
 		const createdUser = await User.create(filteredBody);
 
@@ -79,7 +78,6 @@ exports.protect = async (req, _res, next) => {
 		if (!user.active) return next(new AppError("User is inactive", 400));
 
 		// 5 - See if pw was changed in the meantime
-
 		const tokenIssuedAt = new Date(decoded.iat * 1000).getTime();
 		const passwordChangedAt = new Date(user.passwordChangedAt).getTime();
 

@@ -14,12 +14,20 @@ exports.getOrdersAndStatistics = async (_req, res, next) => {
 			select: "firstName lastName",
 		});
 
+		// TODO: IMprove this, it's ugly ASF
 		const documentToObject = JSON.parse(JSON.stringify(response));
+
+		const allStatisticsOption = {
+			email: filterUniqueEmails(documentToObject).length,
+			poCreated: documentToObject.length,
+			thanLastWeek: "-",
+			missingInformation: countNullFields(documentToObject).length,
+		};
 
 		const statistics = (days) => ({
 			email: filterFromDate(filterUniqueEmails(documentToObject), days),
 			poCreated: filterFromDate(documentToObject, days),
-			thanLastWeek: 69,
+			thanLastWeek: "TBA",
 			missingInformation: filterFromDate(countNullFields(documentToObject), days),
 		});
 
@@ -29,6 +37,7 @@ exports.getOrdersAndStatistics = async (_req, res, next) => {
 			orderCount: response.length,
 			data: {
 				statistics: {
+					all: allStatisticsOption,
 					past24h: statistics(1),
 					past7days: statistics(7),
 					past30days: statistics(30),
