@@ -71,6 +71,10 @@ const userSchema = new mongoose.Schema({
 		},
 	},
 	columnSettings: {
+		OrderID: {
+			type: Boolean,
+			default: true,
+		},
 		EventName: {
 			type: Boolean,
 			default: true,
@@ -84,6 +88,10 @@ const userSchema = new mongoose.Schema({
 			default: true,
 		},
 		Qty: {
+			type: Boolean,
+			default: true,
+		},
+		Seats: {
 			type: Boolean,
 			default: true,
 		},
@@ -115,9 +123,9 @@ const userSchema = new mongoose.Schema({
 			type: Boolean,
 			default: true,
 		},
-		OrderID: {
+		"Re-Sync": {
 			type: Boolean,
-			default: false,
+			default: true,
 		},
 	},
 });
