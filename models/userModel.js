@@ -123,10 +123,6 @@ const userSchema = new mongoose.Schema({
 			type: Boolean,
 			default: true,
 		},
-		"Re-Sync": {
-			type: Boolean,
-			default: true,
-		},
 	},
 });
 
