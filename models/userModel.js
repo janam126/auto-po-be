@@ -119,10 +119,6 @@ const userSchema = new mongoose.Schema({
 			type: Boolean,
 			default: true,
 		},
-		Logs: {
-			type: Boolean,
-			default: true,
-		},
 	},
 });
 
