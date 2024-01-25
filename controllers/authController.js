@@ -5,9 +5,17 @@ const getLocalTimestamp = require("../utils/getLocalTimestamp");
 const sendEmail = require("../utils/sendEmail");
 const jwtVerification = require("../utils/jwtVerification");
 
-exports.singup = async (req, res, next) => {
+exports.addUser = async (req, res, next) => {
 	try {
 		const { active, columnsettings, role, passwordChangedAt, ...filteredBody } = req.body;
+
+		if (req.user.role === "admin") {
+			if (!req.body.company)
+				return next(new AppError("Please provide a company field", 400));
+			filteredBody.role = "companyAdmin";
+		} else {
+			filteredBody.company = req.user.company;
+		}
 
 		const createdUser = await User.create(filteredBody);
 

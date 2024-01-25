@@ -33,7 +33,7 @@ const userSchema = new mongoose.Schema({
 	},
 	role: {
 		type: String,
-		enum: ["user", "guide", "lead-guide", "admin"],
+		enum: ["user", "companyAdmin", "admin"],
 		default: "user",
 	},
 	password: {
@@ -69,6 +69,9 @@ const userSchema = new mongoose.Schema({
 			type: Boolean,
 			default: true,
 		},
+	},
+	company: {
+		type: String,
 	},
 	columnSettings: {
 		OrderID: {

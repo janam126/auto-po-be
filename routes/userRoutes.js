@@ -17,8 +17,15 @@ router
 	.route("/me/changePassword")
 	.patch(authController.protect, authController.changePassword);
 
+router
+	.route("/addUser")
+	.post(
+		authController.protect,
+		authController.restrictTo("admin", "companyAdmin"),
+		authController.addUser
+	);
+
 router.route("/login").post(authController.login);
-router.route("/signup").post(authController.singup);
 router.route("/forgot-password").post(authController.forgotPassword);
 router.route("/reset-password").post(authController.resetPassword);
 
