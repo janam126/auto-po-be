@@ -18,7 +18,13 @@ exports.addUser = async (req, res, next) => {
 			filteredBody.company = req.user.company;
 		}
 
-		await sendEmail({ to: req.body.email, type: "Welcome" });
+		await sendEmail({
+			to: req.body.email,
+			type: "Welcome",
+			invitedBy: `${req.user.firstName} ${req.user.lastName}`,
+			company: filteredBody.company,
+		});
+
 		const createdUser = await User.create(filteredBody);
 
 		res.status(200).json({

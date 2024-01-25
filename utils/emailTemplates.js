@@ -1,4 +1,4 @@
-exports.resetPasswordTemplate = (resetLink) =>
+exports.resetPasswordTemplate = ({ resetLink }) =>
 	`<!DOCTYPE html>
    <html lang="en">
       <head>
@@ -108,7 +108,7 @@ exports.resetPasswordTemplate = (resetLink) =>
    
 `;
 
-exports.addedToAPO = (resetLink) =>
+exports.addedToAPO = ({ invitedBy, company }) =>
 	`<!DOCTYPE html>
    <html lang="en">
       <head>
@@ -168,42 +168,18 @@ exports.addedToAPO = (resetLink) =>
             }
    
             .upParagraph {
-               margin-bottom: 100px;
-            }
-   
-            .buttonContainer {
-               text-align: center;
-            }
-   
-            .buttonContainer button {
-               width: 200px;
-               height: 40px;
-               background-color: #1c1b17;
-               border:none;
-               border-radius: 4px;
-               font-weight: bold;
-               cursor: pointer;
-               transition: 200ms;
-               margin-bottom: 60px;
-            }
-   
-            .buttonContainer button a {
-               color: white;
-               text-decoration: none;
-            }
-   
-            .buttonContainer button:hover {
-               scale: 1.1;
+               margin-bottom: 30px;
             }
          </style>
       </head>
       <body>
          <div class="container">
             <div class="inner-container">
-              HEHEHE ADDED TO APO
-            </div>
+               <h1 class="upHeader">Welcome to Auto PO</h1>
+               <p>Invited by: ${invitedBy}</p>
+               <p class="upParagraph">Invited to company: ${company}}</p>
+               <p>We're glad to have you on onboard!</p>
          </div>
       </body>
    </html>
-   
 `;

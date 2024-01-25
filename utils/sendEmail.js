@@ -1,14 +1,16 @@
 const nodemailer = require("nodemailer");
 const { resetPasswordTemplate, addedToAPO } = require("./emailTemplates");
 
-const sendEmail = async ({ to, type = "resetPassword", resetLink }) => {
-	const subjectText =
-		type === "resetPassword"
-			? "You requested a password reset"
-			: "You have been added to the APO";
+const sendEmail = async ({ to, type = "resetPassword", invitedBy, company, resetLink }) => {
+	const isResetEmail = type === "resetPassword";
 
-	const htmlTemplate =
-		type === "resetPassword" ? resetPasswordTemplate(resetLink) : addedToAPO();
+	const subjectText = isResetEmail
+		? "You requested a password reset"
+		: "You have been added to the APO";
+
+	const htmlTemplate = isResetEmail
+		? resetPasswordTemplate({ resetLink })
+		: addedToAPO({ invitedBy, company });
 
 	try {
 		const transporter = nodemailer.createTransport({
