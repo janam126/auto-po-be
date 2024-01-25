@@ -10,10 +10,11 @@ exports.addUser = async (req, res, next) => {
 		const { active, columnsettings, role, passwordChangedAt, ...filteredBody } = req.body;
 
 		if (req.user.role === "admin") {
-			if (!req.body.company)
-				return next(new AppError("Please provide a company field", 400));
+			if (!req.body.company) return next(new AppError("Please provide a company field", 400));
 			filteredBody.role = "companyAdmin";
 		} else {
+			if (!req.user.company)
+				return next(new AppError("Company Admin doesn't have a company", 400));
 			filteredBody.company = req.user.company;
 		}
 
@@ -21,7 +22,7 @@ exports.addUser = async (req, res, next) => {
 
 		res.status(200).json({
 			status: "success",
-			message: "User created",
+			message: "New user added successfully",
 			data: {
 				user: createdUser,
 			},
