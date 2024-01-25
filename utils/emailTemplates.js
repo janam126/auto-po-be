@@ -177,7 +177,7 @@ exports.addedToAPO = ({ invitedBy, company }) =>
             <div class="inner-container">
                <h1 class="upHeader">Welcome to Auto PO</h1>
                <p>Invited by: ${invitedBy}</p>
-               <p class="upParagraph">Invited to company: ${company}}</p>
+               <p class="upParagraph">Invited to company: ${company}</p>
                <p>We're glad to have you on onboard!</p>
          </div>
       </body>

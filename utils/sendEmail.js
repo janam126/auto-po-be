@@ -6,7 +6,7 @@ const sendEmail = async ({ to, type = "resetPassword", invitedBy, company, reset
 
 	const subjectText = isResetEmail
 		? "You requested a password reset"
-		: "You have been added to the APO";
+		: "You have been invited to the APO";
 
 	const htmlTemplate = isResetEmail
 		? resetPasswordTemplate({ resetLink })
