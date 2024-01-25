@@ -1,8 +1,7 @@
 const nodemailer = require("nodemailer");
 const { resetPasswordTemplate, addedToAPO } = require("./emailTemplates");
 
-const sendEmail = async (to, settings) => {
-	const { type = "resetPassword", resetLink } = settings;
+const sendEmail = async ({ to, type = "resetPassword", resetLink }) => {
 	const subjectText =
 		type === "resetPassword"
 			? "You requested a password reset"
