@@ -7,8 +7,10 @@ const jwtVerification = require("../utils/jwtVerification");
 
 exports.addUser = async (req, res, next) => {
 	try {
+		// Filter the request body (security for malicious attempts)
 		const { active, columnsettings, role, passwordChangedAt, ...filteredBody } = req.body;
 
+		// Adding necessary fields to the filteredBody
 		if (req.user.role === "admin") {
 			if (!req.body.company) return next(new AppError("Please provide a company field", 400));
 			filteredBody.role = "companyAdmin";
@@ -18,6 +20,7 @@ exports.addUser = async (req, res, next) => {
 			filteredBody.company = req.user.company;
 		}
 
+		// Sending the email
 		await sendEmail({
 			to: req.body.email,
 			type: "Welcome",
@@ -25,6 +28,7 @@ exports.addUser = async (req, res, next) => {
 			company: filteredBody.company,
 		});
 
+		// Creating a user
 		const createdUser = await User.create(filteredBody);
 
 		res.status(200).json({
@@ -42,17 +46,22 @@ exports.addUser = async (req, res, next) => {
 exports.login = async (req, res, next) => {
 	try {
 		const { email, password } = req.body;
+
+		// Check if email or password are provided
 		if (!email || !password)
 			return next(new AppError("Please provide email and password", 400));
 
+		// Find the user
 		const user = await User.findOneAndUpdate(
 			{ email },
 			{ lastLoginTime: getLocalTimestamp() },
 			{ new: true }
 		);
 
+		// Check if user exists (Same error msg as bellow for security purposes)
 		if (!user) return next(new AppError("Incorrect email or password", 403));
 
+		// Check if the password is correct or not (Same error msg as above for security purposes)
 		if (user.password !== password)
 			return next(new AppError("Incorrect email or password", 403));
 
@@ -112,6 +121,7 @@ exports.protect = async (req, _res, next) => {
 };
 
 exports.restrictTo = (...roles) => {
+	// Check if user roles contain the (...roles)
 	return async (req, _res, next) => {
 		if (!roles.includes(req.user.role)) {
 			return next(new AppError("No persmission. Only ADMINS can access this resource", 403));
@@ -123,14 +133,19 @@ exports.restrictTo = (...roles) => {
 exports.forgotPassword = async (req, res, next) => {
 	try {
 		const { email } = req.body;
+
+		// Check if email is provided
 		if (!email) return next(new AppError("Please provide an email", 400));
 
+		// Find the user
 		const user = await User.findOne({ email });
+
+		// Check if user exists
 		if (!user) return next(new AppError("User with this email doesn't exist", 400));
 
+		// Generate token, url and send email
 		const resetToken = jwtSigning.signEmail(user.email);
 		const resetURL = `${process.env.FRONTEND_URL}/reset-password?token=${resetToken}`;
-
 		await sendEmail({ to: user.email, resetLink: resetURL });
 
 		res.status(200).json({
@@ -146,9 +161,12 @@ exports.resetPassword = async (req, res, next) => {
 	try {
 		const { token } = req.query;
 		const { newPassword } = req.body;
+
+		// Check if token or newPassword are provided
 		if (!token || !newPassword)
 			return next(new AppError("Token or newPassword not provided", 400));
 
+		// Decode the token
 		const decoded = jwtVerification(token, {
 			error: "Your password reset session has expired. Please request a new password reset.",
 			invalid: "Invalid or expired password reset link. Please request a new link.",
@@ -158,6 +176,7 @@ exports.resetPassword = async (req, res, next) => {
 		const user = await User.findOne({ email: decoded.email });
 		if (!user) return next(new AppError("User not found", 400));
 
+		// Send error if user password is the same as the current password
 		if (user.password === newPassword) {
 			return next(new AppError("Cannot be a previously used password!", 400));
 		}
@@ -181,6 +200,8 @@ exports.resetPassword = async (req, res, next) => {
 exports.changePassword = async (req, res, next) => {
 	try {
 		const { currentPassword, password, passwordConfirm } = req.body;
+
+		// Check if currentPassword password or passwordConfirm are provided
 		if (!currentPassword || !password || !passwordConfirm)
 			return next(new AppError("Current Password or Password Confirm not provided", 400));
 
