@@ -1,7 +1,16 @@
 const nodemailer = require("nodemailer");
-const resetPasswordTemplate = require("./resetPasswordTemplate");
+const { resetPasswordTemplate, addedToAPO } = require("./emailTemplates");
 
-const sendEmail = async (to, resetLink) => {
+const sendEmail = async (to, settings) => {
+	const { type = "resetPassword", resetLink } = settings;
+	const subjectText =
+		type === "resetPassword"
+			? "You requested a password reset"
+			: "You have been added to the APO";
+
+	const htmlTemplate =
+		type === "resetPassword" ? resetPasswordTemplate(resetLink) : addedToAPO();
+
 	try {
 		const transporter = nodemailer.createTransport({
 			service: "gmail",
@@ -15,8 +24,8 @@ const sendEmail = async (to, resetLink) => {
 		await transporter.sendMail({
 			from: "Auto PO - StageFront <auto_po_mail>",
 			to,
-			subject: "You requested a password reset",
-			html: resetPasswordTemplate(resetLink),
+			subject: subjectText,
+			html: htmlTemplate,
 		});
 	} catch (err) {
 		return Promise.reject(err);
