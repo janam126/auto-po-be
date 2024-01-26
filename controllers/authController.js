@@ -224,7 +224,7 @@ exports.changePassword = async (req, res, next) => {
 			req.user.id,
 			{ password, passwordChangedAt: new Date() },
 			{ runValidators: true, new: true }
-		);
+		).select("-password");
 
 		res.status(200).json({
 			status: "success",

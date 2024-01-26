@@ -19,12 +19,14 @@ exports.getAllUsers = async (_req, res, next) => {
 };
 
 exports.getMe = async (req, res, next) => {
+	const { password, ...user } = JSON.parse(JSON.stringify(req.user));
+
 	try {
 		res.status(200).json({
 			status: "success",
 			message: "Here is your data",
 			data: {
-				user: req.user,
+				user,
 			},
 		});
 	} catch (err) {

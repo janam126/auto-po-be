@@ -102,6 +102,9 @@ exports.editPurchaseOrder = async (req, res, next) => {
 		const order = await PurchaseOrders.findOneAndUpdate({ OrderID }, updateObject, {
 			new: true,
 			runValidators: true,
+		}).populate({
+			path: "History.UpdatedBy",
+			select: "firstName lastName",
 		});
 
 		if (!order) return next(new AppError("Purchase order doesn't exist", 400));
