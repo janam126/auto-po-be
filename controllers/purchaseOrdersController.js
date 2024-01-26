@@ -7,9 +7,15 @@ const {
 } = require("../utils/statisticsHelper");
 const { PDFDocument, StandardFonts, rgb } = require("pdf-lib");
 
-exports.getOrdersAndStatistics = async (_req, res, next) => {
+exports.getOrdersAndStatistics = async (req, res, next) => {
+	const query = {};
+
+	if (req.user.role !== "admin") {
+		query.Company = req.user.company;
+	}
+
 	try {
-		const response = await PurchaseOrders.find().populate({
+		const response = await PurchaseOrders.find(query).populate({
 			path: "History.UpdatedBy",
 			select: "firstName lastName",
 		});
