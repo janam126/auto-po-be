@@ -21,6 +21,9 @@ const userSchema = new mongoose.Schema({
 			message: "Please enter a valid email",
 		},
 	},
+	company: {
+		type: String,
+	},
 	photo: {
 		type: String,
 		default: "default.png",
@@ -69,9 +72,6 @@ const userSchema = new mongoose.Schema({
 			type: Boolean,
 			default: true,
 		},
-	},
-	company: {
-		type: String,
 	},
 	columnSettings: {
 		OrderID: {

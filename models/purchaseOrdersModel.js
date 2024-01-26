@@ -5,6 +5,9 @@ const purchaseOrdersSchema = new mongoose.Schema({
 		type: String,
 		required: true,
 	},
+	Company: {
+		type: String,
+	},
 	Venue: {
 		type: String,
 		required: true,
