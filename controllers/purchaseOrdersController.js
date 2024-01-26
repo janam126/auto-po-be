@@ -72,6 +72,26 @@ exports.createPurchaseOrder = async (req, res, next) => {
 	}
 };
 
+exports.getSinglePurchaseOrder = async (req, res, next) => {
+	try {
+		const OrderID = req.params.id;
+		const purchaseOrder = await PurchaseOrders.findOne({ OrderID });
+
+		if (!purchaseOrder)
+			return next(new AppError(`Didn't find Purchase order with ID: ${OrderID}`, 400));
+
+		res.status(200).json({
+			status: "success",
+			message: "Purchase order found",
+			data: {
+				purchaseOrder,
+			},
+		});
+	} catch (error) {
+		return next(new AppError(error, 400));
+	}
+};
+
 exports.editPurchaseOrder = async (req, res, next) => {
 	try {
 		const OrderID = req.params.id;

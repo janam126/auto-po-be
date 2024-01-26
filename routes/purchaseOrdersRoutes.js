@@ -11,6 +11,9 @@ router
 
 router.route("/pdf").get(purchaseOrdersController.downloadStatisticsPDF);
 
-router.route("/:id").patch(authController.protect, purchaseOrdersController.editPurchaseOrder);
+router
+	.route("/:id")
+	.get(authController.protect,purchaseOrdersController.getSinglePurchaseOrder)
+	.patch(authController.protect, purchaseOrdersController.editPurchaseOrder);
 
 module.exports = router;
