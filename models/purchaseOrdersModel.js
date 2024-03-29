@@ -3,53 +3,53 @@ const mongoose = require("mongoose");
 const purchaseOrdersSchema = new mongoose.Schema({
 	EventName: {
 		type: String,
-		required: true,
+		default: null,
 	},
 	Company: {
 		type: String,
 	},
 	Venue: {
 		type: String,
-		required: true,
+		default: null,
 	},
 	POSID: {
 		type: String,
-		required: true,
+		default: null,
 	},
 	Section: {
 		type: String,
-		required: true,
+		default: null,
 	},
 	Row: {
 		type: String,
-		required: true,
+		default: null,
 	},
 	Qty: {
 		type: Number,
-		required: true,
+		default: null,
 	},
 	Seats: {
 		type: [Number],
-		required: true,
-		validate: {
-			validator: function (array) {
-				return array.length > 0; // Check that the array is not empty
-			},
-			message: "Seats array must not be empty",
+		default: null,
+		set: function (value) {
+			if (Array.isArray(value) && value.length === 0) {
+				return null;
+			}
+			return value;
 		},
 	},
 	Cost: {
 		type: Number,
-		required: true,
+		default: null,
 	},
 	Marketplace: {
 		type: String,
-		required: true,
+		default: null,
 		enum: ["Seat Geek", "StubHub", "Ticketmaster"],
 	},
 	EventDate: {
 		type: Date,
-		required: true,
+		default: null,
 	},
 	CreationDate: {
 		type: Date,
@@ -57,24 +57,24 @@ const purchaseOrdersSchema = new mongoose.Schema({
 	},
 	Status: {
 		type: String,
-		required: true,
 		enum: ["updated", "failed", "pending"],
+		default: null,
 	},
 	Email: {
 		type: String,
-		required: true,
+		default: null,
 	},
 	OrderID: {
 		type: Number,
-		required: true,
+		default: null,
 	},
 	DeliveryMethod: {
 		type: String,
-		required: true,
+		default: null,
 	},
 	IsAttachment: {
 		type: Boolean,
-		required: true,
+		default: null,
 	},
 	Attachment: {
 		fileName: {
@@ -88,38 +88,47 @@ const purchaseOrdersSchema = new mongoose.Schema({
 		},
 		uploadDate: {
 			type: Date,
-			default: Date.now,
 		},
 	},
 	IsDeliveryDelay: {
 		type: Boolean,
-		required: true,
+		default: null,
 	},
 	CreditCard: {
 		type: String,
-		required: true,
+		default: null,
 	},
-	History: [
-		{
-			UpdatedDate: {
-				type: Date,
-				default: Date.now,
+	History: {
+		type: [
+			{
+				UpdatedDate: {
+					type: Date,
+					default: null,
+				},
+				MissingInformation: {
+					type: String,
+					default: null,
+				},
+				Status: {
+					type: String,
+					enum: ["updated", "failed", "pending"],
+					default: null,
+				},
+				UpdatedBy: {
+					type: mongoose.Schema.Types.ObjectId,
+					ref: "User",
+					default: null,
+				},
 			},
-			MissingInformation: {
-				type: String,
-			},
-			Status: {
-				type: String,
-				required: true,
-				enum: ["updated", "failed", "pending"],
-			},
-			UpdatedBy: {
-				type: mongoose.Schema.Types.ObjectId,
-				ref: "User",
-				required: true,
-			},
-		},
-	],
+		],
+		default: null,
+		// set: function (value) {
+		// 	if (Array.isArray(value) && value.length === 0) {
+		// 		return null;
+		// 	}
+		// 	return value;
+		// },
+	},
 });
 
 const PurchaseOrders = mongoose.model("PurchaseOrder", purchaseOrdersSchema, "purchaseOrders");
