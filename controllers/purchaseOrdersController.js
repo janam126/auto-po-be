@@ -75,7 +75,10 @@ exports.createPurchaseOrder = async (req, res, next) => {
 exports.getSinglePurchaseOrder = async (req, res, next) => {
 	try {
 		const OrderID = req.params.id;
-		const purchaseOrder = await PurchaseOrders.findOne({ OrderID });
+		const purchaseOrder = await PurchaseOrders.findOne({ OrderID }).populate({
+			path: "History.UpdatedBy",
+			select: "firstName lastName",
+		});
 
 		if (!purchaseOrder)
 			return next(new AppError(`Didn't find Purchase order with ID: ${OrderID}`, 400));
@@ -108,6 +111,7 @@ exports.editPurchaseOrder = async (req, res, next) => {
 			MissingInformation: "none",
 			Status: "updated",
 			UpdatedBy: req.user._id,
+			UpdatedDate: new Date().toISOString(),
 		};
 
 		const updateObject = History
