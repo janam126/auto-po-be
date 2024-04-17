@@ -23,7 +23,7 @@ exports.addUser = async (req, res, next) => {
 		// Sending the email
 		await sendEmail({
 			to: req.body.email,
-			type: "Welcome",
+			type: "welcome",
 			invitedBy: `${req.user.firstName} ${req.user.lastName}`,
 			company: filteredBody.company,
 		});
@@ -146,7 +146,7 @@ exports.forgotPassword = async (req, res, next) => {
 		// Generate token, url and send email
 		const resetToken = jwtSigning.signEmail(user.email);
 		const resetURL = `${process.env.FRONTEND_URL}/reset-password?token=${resetToken}`;
-		await sendEmail({ to: user.email, resetLink: resetURL });
+		await sendEmail({ to: user.email, resetLink: resetURL, type: "resetPassword" });
 
 		res.status(200).json({
 			status: "success",

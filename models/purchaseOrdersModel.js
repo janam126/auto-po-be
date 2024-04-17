@@ -67,6 +67,8 @@ const purchaseOrdersSchema = new mongoose.Schema({
 	OrderID: {
 		type: Number,
 		default: null,
+		unique: [true, "ORDER ID has to be unique"],
+		required: [true, "Order ID is reqired"],
 	},
 	DeliveryMethod: {
 		type: String,

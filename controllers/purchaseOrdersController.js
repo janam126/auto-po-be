@@ -6,6 +6,8 @@ const {
 	filterUniqueEmails,
 } = require("../utils/statisticsHelper");
 const { PDFDocument, StandardFonts, rgb } = require("pdf-lib");
+const { checkForMissingInfo } = require("../utils/checkForMissingInfo");
+const sendEmail = require("../utils/sendEmail");
 
 exports.getOrdersAndStatistics = async (req, res, next) => {
 	const query = {};
@@ -59,6 +61,16 @@ exports.getOrdersAndStatistics = async (req, res, next) => {
 exports.createPurchaseOrder = async (req, res, next) => {
 	try {
 		const purchaseOrder = await PurchaseOrders.create(req.body);
+
+		const nullFields = checkForMissingInfo(purchaseOrder);
+
+		if (nullFields && purchaseOrder?.Email) {
+			sendEmail({
+				to: purchaseOrder.Email,
+				type: "missingInfo",
+				missingInfoData: nullFields,
+			});
+		}
 
 		res.status(200).json({
 			status: "success",

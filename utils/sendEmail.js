@@ -1,16 +1,31 @@
 const nodemailer = require("nodemailer");
-const { resetPasswordTemplate, addedToAPO } = require("./emailTemplates");
+const { resetPasswordTemplate, addedToAPO, missingInfoMail } = require("./emailTemplates");
 
-const sendEmail = async ({ to, type = "resetPassword", invitedBy, company, resetLink }) => {
-	const isResetEmail = type === "resetPassword";
+exports.mailTypes = Object.freeze({
+	welcome: "welcome",
+	resetPassword: "resetPassword",
+	missingInfo: "missingInfo",
+});
 
-	const subjectText = isResetEmail
-		? "You requested a password reset"
-		: "You have been invited to the APO";
+const sendEmail = async ({
+	to,
+	type = "resetPassword",
+	invitedBy,
+	company,
+	resetLink,
+	missingInfoData,
+}) => {
+	const subjectText = {
+		welcome: "You have been invited to the APO",
+		resetPassword: "You requested a password reset",
+		missingInfo: "Your purchase order has missing information",
+	};
 
-	const htmlTemplate = isResetEmail
-		? resetPasswordTemplate({ resetLink })
-		: addedToAPO({ invitedBy, company });
+	const htmlTemplate = {
+		welcome: () => addedToAPO({ invitedBy, company }),
+		resetPassword: () => resetPasswordTemplate({ resetLink }),
+		missingInfo: () => missingInfoMail({ missingInfo: missingInfoData }),
+	};
 
 	try {
 		const transporter = nodemailer.createTransport({
@@ -25,8 +40,8 @@ const sendEmail = async ({ to, type = "resetPassword", invitedBy, company, reset
 		await transporter.sendMail({
 			from: "Auto PO - StageFront <auto_po_mail>",
 			to,
-			subject: subjectText,
-			html: htmlTemplate,
+			subject: subjectText[type],
+			html: htmlTemplate[type](),
 		});
 	} catch (err) {
 		return Promise.reject(err);
