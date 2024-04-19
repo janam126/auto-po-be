@@ -52,8 +52,16 @@ const sendEmail = async ({
 			subject: subjectText[type],
 			html: htmlTemplate[type](),
 		});
+
+		return {
+			message: "success",
+			err: null,
+		};
 	} catch (err) {
-		return Promise.reject(err);
+		return {
+			message: "fail",
+			err: err,
+		};
 	}
 };
 

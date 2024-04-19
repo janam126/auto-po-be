@@ -146,7 +146,19 @@ exports.forgotPassword = async (req, res, next) => {
 		// Generate token, url and send email
 		const resetToken = jwtSigning.signEmail(user.email);
 		const resetURL = `${process.env.FRONTEND_URL}/reset-password?token=${resetToken}`;
-		await sendEmail({ to: user.email, resetLink: resetURL, type: "resetPassword" });
+		const result = await sendEmail({
+			to: user.email,
+			resetLink: resetURL,
+			type: "resetPassword",
+		});
+
+		if (result.message === "fail") {
+			let message = result.err?.message;
+			if (message.startsWith("Invalid login")) {
+				message = "Node mailer auth error";
+			}
+			return next(new AppError(message, 400));
+		}
 
 		res.status(200).json({
 			status: "success",
