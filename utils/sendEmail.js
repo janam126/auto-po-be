@@ -1,10 +1,16 @@
 const nodemailer = require("nodemailer");
-const { resetPasswordTemplate, addedToAPO, missingInfoMail } = require("./emailTemplates");
+const {
+	resetPasswordTemplate,
+	addedToAPO,
+	missingInfoMail,
+	poCreatedMail,
+} = require("./emailTemplates");
 
 exports.mailTypes = Object.freeze({
 	welcome: "welcome",
 	resetPassword: "resetPassword",
 	missingInfo: "missingInfo",
+	poCreated: "poCreated",
 });
 
 const sendEmail = async ({
@@ -14,17 +20,20 @@ const sendEmail = async ({
 	company,
 	resetLink,
 	missingInfoData,
+	data,
 }) => {
 	const subjectText = {
 		welcome: "You have been invited to the APO",
 		resetPassword: "You requested a password reset",
 		missingInfo: "Your purchase order has missing information",
+		poCreated: "You successfully created a purchase order",
 	};
 
 	const htmlTemplate = {
 		welcome: () => addedToAPO({ invitedBy, company }),
 		resetPassword: () => resetPasswordTemplate({ resetLink }),
 		missingInfo: () => missingInfoMail({ missingInfo: missingInfoData }),
+		poCreated: () => poCreatedMail({ data }),
 	};
 
 	try {

@@ -264,3 +264,88 @@ exports.missingInfoMail = ({ missingInfo }) => {
       </body>
    </html>`;
 };
+
+exports.poCreatedMail = ({ data }) => {
+	const { _id, __v, History, ...filteredData } = data;
+	const poDataToArray = Object.entries(filteredData).map(([k, v]) => [
+		`${k}: ${v ?? "<span style='color:red;'>Missing info</span>"}`,
+	]);
+	let poData = ``;
+	poDataToArray.forEach((i) => (poData += `<li>${i}</li>`));
+
+	return `<!DOCTYPE html>
+   <html lang="en">
+      <head>
+         <meta charset="utf-8" />
+         <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+         <meta name="viewport" content="width=device-width, initial-scale=1" />
+         <link rel="preconnect" href="https://fonts.googleapis.com" />
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+         <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet" />
+         <meta name="theme-color" content="#000000" />
+         <meta
+            name="description"
+            content="Navigate through your purchase orders with ease, smoothly managing transactions. Application made by StageFront" />
+         <title>Password Reset</title>
+         <style>
+            * {
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+               font-family: "Montserrat", "Verdana", sans-serif;
+            }
+   
+            body {
+               padding: 20px;
+            }
+   
+            .container {
+               background-color: #f6f7f7;
+               width: 700px;
+               max-width: 100%;
+               padding: 70px 20px;
+            }
+   
+            .inner-container {
+               width: 300px;
+               max-width: 100%;
+               margin: 0 auto;
+            }
+   
+            .upHeader {
+               color: #3b3b3b;
+               text-align: center;
+               font-size: 24px;
+               font-weight: 700;
+               line-height: 32.5px;
+               margin-bottom: 10px;
+            }
+   
+            p {
+               color: #3b3b3b;
+               text-align: center;
+               font-size: 14px;
+               font-weight: 400;
+               line-height: 20px;
+            }
+
+   
+            .upParagraph {
+               margin-bottom: 30px;
+            }
+         </style>
+      </head>
+      <body>
+         <div class="container">
+            <div class="inner-container">
+               <h1 class="upHeader">Your purchase order</h1>
+               <p class="upParagraph">Purchase order details:</p>
+              <ul>
+              ${poData}
+              </ul>
+         </div>
+      </body>
+   </html>`;
+};
