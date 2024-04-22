@@ -71,6 +71,7 @@ exports.createPurchaseOrder = async (req, res, next) => {
 				to: purchaseOrder.Email,
 				type: "missingInfo",
 				missingInfoData: nullFields,
+				data: purchaseOrder,
 			});
 		}
 

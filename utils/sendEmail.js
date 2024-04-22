@@ -32,7 +32,7 @@ const sendEmail = async ({
 	const htmlTemplate = {
 		welcome: () => addedToAPO({ invitedBy, company }),
 		resetPassword: () => resetPasswordTemplate({ resetLink }),
-		missingInfo: () => missingInfoMail({ missingInfo: missingInfoData }),
+		missingInfo: () => missingInfoMail({ missingInfo: missingInfoData, data }),
 		poCreated: () => poCreatedMail({ data }),
 	};
 
