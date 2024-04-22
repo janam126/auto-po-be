@@ -25,8 +25,8 @@ const sendEmail = async ({
 	const subjectText = {
 		welcome: "You have been invited to the APO",
 		resetPassword: "You requested a password reset",
-		missingInfo: "Your purchase order has missing information",
-		poCreated: "You successfully created a purchase order",
+		missingInfo: `Your purchase order ${data?.OrderID} has missing information`,
+		poCreated: `You successfully created a purchase order ${data?.OrderID}`,
 	};
 
 	const htmlTemplate = {

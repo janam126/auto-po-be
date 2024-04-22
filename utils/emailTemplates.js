@@ -203,7 +203,7 @@ const AutoPOEmailStyletag = `<style>
       font-size: 12px;
    }
    .subHeaderRight {
-      font-size: 8px;
+      font-size: 12px;
    }
    .subHeaderContent {
       background-color: white;
