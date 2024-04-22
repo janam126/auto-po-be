@@ -170,7 +170,7 @@ exports.addedToAPO = ({ invitedBy, company }) =>
    </html>
 `;
 
-const AutoPOEmailStyletag = `<style>
+const AutoPOEmailStyleTag = `<style>
    * {
       margin: 0;
       padding: 0;
@@ -274,7 +274,7 @@ exports.missingInfoMail = ({ missingInfo, data }) => {
          <meta charset="UTF-8" />
          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
          <title>AutoPO - Missing info</title>
-         ${AutoPOEmailStyletag}
+         ${AutoPOEmailStyleTag}
       </head>
       <body>
          <div class="container">
@@ -359,13 +359,13 @@ exports.poCreatedMail = ({ data }) => {
          <meta charset="UTF-8" />
          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
          <title>Auto PO - Order create</title>
-         ${AutoPOEmailStyletag}
+         ${AutoPOEmailStyleTag}
       </head>
       <body>
          <div class="container">
             <header class="header">
                <p class="headerMain">Stage Front Auto PO</p>
-               <p class="headerSub">Action Required: Incomplete Purchase Order ID  ${handleMissingInfo(data?.OrderID)}</p>
+               <p class="headerSub">Purchase Order ID ${handleMissingInfo(data?.OrderID)} successfully created</p>
             </header>
             <div class="content">
                <div class="universalContentStyle">
