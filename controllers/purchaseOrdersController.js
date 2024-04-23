@@ -64,6 +64,14 @@ exports.createPurchaseOrder = async (req, res, next) => {
 		const { settings } = req.user;
 		const { emailWhenPoCreated, emailWhenPoHasMissingInfo } = settings;
 
+		if (purchaseOrder?.Email && emailWhenPoCreated) {
+			sendEmail({
+				to: purchaseOrder.Email,
+				type: "poCreated",
+				data: purchaseOrder?.toObject(),
+			});
+		}
+
 		const nullFields = checkForMissingInfo(purchaseOrder);
 
 		if (nullFields && purchaseOrder?.Email && emailWhenPoHasMissingInfo) {
@@ -72,14 +80,6 @@ exports.createPurchaseOrder = async (req, res, next) => {
 				type: "missingInfo",
 				missingInfoData: nullFields,
 				data: purchaseOrder,
-			});
-		}
-
-		if (purchaseOrder?.Email && emailWhenPoCreated) {
-			sendEmail({
-				to: purchaseOrder.Email,
-				type: "poCreated",
-				data: purchaseOrder?.toObject(),
 			});
 		}
 
